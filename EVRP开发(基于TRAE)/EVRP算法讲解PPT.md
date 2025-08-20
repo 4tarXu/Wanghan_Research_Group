@@ -72,33 +72,33 @@
 
 **目标函数：**
 最小化总成本：
-$$
+$
 \min Z = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{k \in K} \sum_{i \in F} \gamma u_{ik}
-$$
+$
 其中$\gamma$是单位充电成本系数
 
 **约束条件：**
 
 1. **客户访问约束**（每个客户被访问一次）：
-$$\sum_{k \in K} \sum_{i \in V} x_{ijk} = 1, \quad \forall j \in C$$
+$\sum_{k \in K} \sum_{i \in V} x_{ijk} = 1, \quad \forall j \in C$
 
 2. **流量守恒约束**（车辆平衡）：
-$$\sum_{i \in V} x_{ijk} - \sum_{j \in V} x_{jik} = 0, \quad \forall k \in K, \forall i \in V$$
+$\sum_{i \in V} x_{ijk} - \sum_{j \in V} x_{jik} = 0, \quad \forall k \in K, \forall i \in V$
 
 3. **载重容量约束**（不超过车辆载重）：
-$$q_i \leq y_{ik} \leq Q, \quad \forall k \in K, \forall i \in V$$
-$$y_{jk} \leq y_{ik} - q_i x_{ijk} + Q(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$$
+$q_i \leq y_{ik} \leq Q, \quad \forall k \in K, \forall i \in V$
+$y_{jk} \leq y_{ik} - q_i x_{ijk} + Q(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$
 
 4. **电池容量约束**（电量始终≥0）：
-$$0 \leq b_{ik} \leq B, \quad \forall k \in K, \forall i \in V$$
-$$b_{jk} \leq b_{ik} - e_{ij} x_{ijk} + B(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$$
+$0 \leq b_{ik} \leq B, \quad \forall k \in K, \forall i \in V$
+$b_{jk} \leq b_{ik} - e_{ij} x_{ijk} + B(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$
 
 5. **充电站约束**（充电站可多次访问）：
-$$b_{ik} + u_{ik} \leq B, \quad \forall k \in K, \forall i \in F$$
+$b_{ik} + u_{ik} \leq B, \quad \forall k \in K, \forall i \in F$
 
 6. **路径连续性约束**（从配送中心出发并返回）：
-$$\sum_{j \in V \setminus \{0\}} x_{0jk} = 1, \quad \forall k \in K$$
-$$\sum_{i \in V \setminus \{0\}} x_{i0k} = 1, \quad \forall k \in K$$
+$\sum_{j \in V \setminus \{0\}} x_{0jk} = 1, \quad \forall k \in K$
+$\sum_{i \in V \setminus \{0\}} x_{i0k} = 1, \quad \forall k \in K$
 
 ---
 
@@ -137,43 +137,43 @@ Depot → 客户3 → 客户1 → 充电站2 → 客户5 → Depot
 
 **适应度函数定义：**
 对于每个个体（路径方案）$s$，其适应度值为：
-$$
+$
 f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}
-$$
+$
 其中：
 - $Z(s)$：路径$s$的总成本
 - $P(s)$：约束违反的惩罚项
 - $\alpha$：惩罚系数（通常取较大值，如$10^6$）
 
 **总成本计算：**
-$$
+$
 Z(s) = \sum_{k \in K} \left[ \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{i \in F} \gamma \cdot u_{ik} + \sum_{i \in V} \beta \cdot t_i \right]
-$$
+$
 
 **各项成本详细计算：**
 
 1. **距离成本**：
-$$
+$
 C_{dist} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} d_{ij} \cdot c_{unit} \cdot x_{ijk}
-$$
+$
 其中$c_{unit}$是单位距离成本
 
 2. **充电成本**：
-$$
+$
 C_{charge} = \sum_{k \in K} \sum_{i \in F} \gamma \cdot u_{ik}
-$$
+$
 其中$\gamma$是单位电量充电成本
 
 3. **时间成本**：
-$$
+$
 C_{time} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} t_{ij} \cdot c_{time} \cdot x_{ijk}
-$$
+$
 其中$c_{time}$是单位时间成本
 
 4. **惩罚成本**（约束违反）：
-$$
+$
 P(s) = \sum_{k \in K} \left[ \max(0, q_{total} - Q) + \max(0, -b_{min}) \right]
-$$
+$
 其中$q_{total}$是总载重，$b_{min}$是最小电量
 
 ---
@@ -184,16 +184,16 @@ $$
 **锦标赛选择（Tournament Selection）：**
 从种群中随机选择$t$个个体，选择其中适应度最高的个体作为父代。
 选择概率：
-$$
+$
 P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}
-$$
+$
 其中$t$是锦标赛大小，通常取2-5
 
 **排序选择（Rank Selection）：**
 按适应度排序后，第$i$个个体被选中的概率：
-$$
+$
 P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}
-$$
+$
 其中$s$是选择压力，$N$是种群大小
 
 ### 2. 交叉操作
@@ -201,8 +201,8 @@ $$
 **部分匹配交叉（PMX - Partially Matched Crossover）：**
 给定两个父代路径$P_1$和$P_2$，随机选择两个交叉点$c_1$和$c_2$：
 
-父代1: $[p_{1,1}, p_{1,2}, ..., \underline{p_{1,c_1}}, ..., p_{1,c_2}}, ..., p_{1,n}]$
-父代2: $[p_{2,1}, p_{2,2}, ..., \underline{p_{2,c_1}}, ..., p_{2,c_2}}, ..., p_{2,n}]$
+父代1: $[p_{1,1}, p_{1,2}, ..., \underline{p_{1,c_1}}, ..., p_{1,c_2}, ..., p_{1,n}]$
+父代2: $[p_{2,1}, p_{2,2}, ..., \underline{p_{2,c_1}}, ..., p_{2,c_2}, ..., p_{2,n}]$
 
 子代通过交换中间片段并修复冲突位置生成
 
@@ -257,53 +257,50 @@ $$
 **充电判断条件：**
 
 1. **电量安全约束**：
-$$
+$
 b_{current} < \alpha \cdot B
-$$
+$
 其中$b_{current}$是当前电量，$B$是电池容量，$\alpha$是安全阈值（通常取0.2-0.3）
 
 2. **可达性约束**：
-$$
+$
 b_{current} < e_{i,j} + \beta \cdot B
-$$
+$
 其中$e_{i,j}$是到达下一个充电站的能耗，$\beta$是缓冲系数
 
 3. **成本优化约束**：
 充电后总成本降低：
-$$
+$
 \Delta C = C_{before} - C_{after} > 0
-$$
+$
 
 **充电策略数学模型：**
 
 **1. 完全充电策略：**
-$$
-u_{charge} = B - b_{current}$$
+$\nu_{charge} = B - b_{current}$
 
 **2. 部分充电策略：**
 最小充电量满足：
-$$
-u_{min} = \max\{e_{total} - b_{current}, 0\}
-$$
+$\nu_{min} = \max\{e_{total} - b_{current}, 0\}
+$
 其中$e_{total}$是剩余路径的总能耗
 
 **3. 智能充电策略：**
 优化充电量：
-$$
-u^* = \arg\min_{\nu \in [0, B - b_{current}]} \left\{ C_{total}(\nu) \right\}
-$$
+$\nu^* = \arg\min_{\nu \in [0, B - b_{current}]} \left\{ C_{total}(\nu) \right\}
+$
 
 **充电时间计算：**
-$$
+$
 t_{charge} = \frac{\nu}{r_{charge}}
-$$
+$
 其中$r_{charge}$是充电速率（kWh/分钟）
 
 **充电站选择决策：**
 选择充电站$f^*$：
-$$
+$
 f^* = \arg\min_{f \in F} \left\{ d_{current,f} + \lambda \cdot t_{wait,f} + \mu \cdot C_{charge,f} \right\}
-$$
+$
 其中：
 - $d_{current,f}$：到充电站的距离
 - $t_{wait,f}$：预计等待时间
@@ -405,27 +402,27 @@ def evaluate_route(route, problem):
 **收敛性指标：**
 
 1. **收敛速度指标：**
-$$
+$
 \text{收敛代数} = \min\{g \mid |f_{best}(g) - f_{best}(g-10)| < \epsilon \cdot f_{best}(g)\}
-$$
+$
 其中$\epsilon$是收敛阈值（通常取0.001）
 
 2. **解质量指标：**
-$$
+$
 \text{改进率} = \frac{f_{initial} - f_{final}}{f_{initial}} \times 100\%
-$$
+$
 
 3. **种群多样性指标：**
-$$
+$
 \text{多样性} = \frac{1}{N} \sum_{i=1}^{N} \frac{||s_i - \bar{s}||}{||s_{max} - s_{min}||}
-$$
+$
 其中$N$是种群大小，$\bar{s}$是种群平均解
 
 4. **收敛曲线拟合：**
 使用指数衰减模型拟合收敛曲线：
-$$
+$
 f(g) = f_{\infty} + (f_0 - f_{\infty}) e^{-\lambda g}
-$$
+$
 其中：
 - $f_0$：初始最优值
 - $f_{\infty}$：收敛值
@@ -443,9 +440,9 @@ $$
 
 **统计显著性检验：**
 使用t检验比较算法性能：
-$$
+$
 t = \frac{\bar{f}_{GA} - \bar{f}_{baseline}}{\sqrt{\frac{s_{GA}^2}{n_{GA}} + \frac{s_{baseline}^2}{n_{baseline}}}}
-$$
+$
 其中$\bar{f}$是平均值，$s$是标准差，$n$是样本数
 
 ---
@@ -566,7 +563,7 @@ $$
 2. Keskin, M., & Çatay, B. (2016). Partial recharge strategies for the electric vehicle routing problem with time windows. Transportation Research Part C.
 
 **开源代码：**
-- GitHub项目：github.com/yourname/evrp-solver
+- GitHub项目：https://github.com/4tarXu/Wanghan_Research_Group/blob/main/EVRP开发(基于TRAE)
 - 数据集：标准VRP测试集 + 充电站数据
 
 **开发工具：**
