@@ -139,40 +139,30 @@ $
 f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}
 $
 其中：
-- $Z(s)$：路径$s$的总成本
+- $Z(s)$：路径 $s$ 的总成本
 - $P(s)$：约束违反的惩罚项
-- $\alpha$：惩罚系数（通常取较大值，如$10^6$）
+- $\alpha$：惩罚系数（通常取较大值，如 $10^6$ ）
 
 **总成本计算：**
-$
-Z(s) = \sum_{k \in K} \left[ \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{i \in F} \gamma \cdot u_{ik} + \sum_{i \in V} \beta \cdot t_i \right]
-$
+$Z(s) = \sum_{k \in K} \left[ \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{i \in F} \gamma \cdot u_{ik} + \sum_{i \in V} \beta \cdot t_i \right]$
 
 **各项成本详细计算：**
 
 1. **距离成本**：
-$
-C_{dist} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} d_{ij} \cdot c_{unit} \cdot x_{ijk}
-$
-其中$c_{unit}$是单位距离成本
+$C_{dist} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} d_{ij} \cdot c_{unit} \cdot x_{ijk}$
+其中 $c_{unit}$ 是单位距离成本
 
 2. **充电成本**：
-$
-C_{charge} = \sum_{k \in K} \sum_{i \in F} \gamma \cdot u_{ik}
-$
-其中$\gamma$是单位电量充电成本
+$C_{charge} = \sum_{k \in K} \sum_{i \in F} \gamma \cdot u_{ik}$
+其中 $\gamma$ 是单位电量充电成本
 
 3. **时间成本**：
-$
-C_{time} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} t_{ij} \cdot c_{time} \cdot x_{ijk}
-$
-其中$c_{time}$是单位时间成本
+$C_{time} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} t_{ij} \cdot c_{time} \cdot x_{ijk}$
+其中 $c_{time}$ 是单位时间成本
 
 4. **惩罚成本**（约束违反）：
-$
-P(s) = \sum_{k \in K} \left[ \max(0, q_{total} - Q) + \max(0, -b_{min}) \right]
-$
-其中$q_{total}$是总载重，$b_{min}$是最小电量
+$P(s) = \sum_{k \in K} \left[ \max(0, q_{total} - Q) + \max(0, -b_{min}) \right]$
+其中 $q_{total}$ 是总载重，$b_{min}$是最小电量
 
 ---
 
@@ -180,18 +170,14 @@ $
 ### 1. 选择操作
 
 **锦标赛选择（Tournament Selection）：**
-从种群中随机选择$t$个个体，选择其中适应度最高的个体作为父代。
+从种群中随机选择 $t$ 个个体，选择其中适应度最高的个体作为父代。
 选择概率：
-$
-P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}
-$
+$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}$
 其中$t$是锦标赛大小，通常取2-5
 
 **排序选择（Rank Selection）：**
 按适应度排序后，第$i$个个体被选中的概率：
-$
-P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}
-$
+$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
 其中$s$是选择压力，$N$是种群大小
 
 ### 2. 交叉操作
@@ -213,21 +199,13 @@ $
 
 **交换变异（Swap Mutation）：**
 随机选择两个位置$i$和$j$，交换这两个位置的客户：
-$$
-\text{原路径: } [..., c_i, ..., c_j, ...]
-$$
-$$
-\text{变异后: } [..., c_j, ..., c_i, ...]
-$$
+$\text{原路径: } [..., c_i, ..., c_j, ...]$
+$\text{变异后: } [..., c_j, ..., c_i, ...]$
 
 **插入变异（Insertion Mutation）：**
 随机选择客户$c_i$和目标位置$j$，将$c_i$插入到位置$j$：
-$$
-\text{原路径: } [..., c_i, ..., c_j, c_{j+1}, ...]
-$$
-$$
-\text{变异后: } [..., c_j, c_i, c_{j+1}, ...]
-$$
+$\text{原路径: } [..., c_i, ..., c_j, c_{j+1}, ...]$
+$\text{变异后: } [..., c_j, c_i, c_{j+1}, ...]$
 
 **反转变异（Inversion Mutation）：**
 随机选择子路径$[i, j]$，反转该子路径：
