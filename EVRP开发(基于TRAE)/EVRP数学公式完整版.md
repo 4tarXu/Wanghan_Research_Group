@@ -101,10 +101,10 @@ $f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}$
 
 ### 选择操作
 **锦标赛选择**：
-$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}$
+$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t}f(j)}$
 
 **排序选择**：
-$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
+$P_{select}(i) = \frac{2-s+2(s-1)\frac{i-1}{N-1}}{N}$
 
 ### 变异操作
 **交换变异**：
