@@ -135,9 +135,7 @@ Depot → 客户3 → 客户1 → 充电站2 → 客户5 → Depot
 
 **适应度函数定义：**
 对于每个个体（路径方案）$s$，其适应度值为：
-$
-f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}
-$
+$f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}$
 其中：
 - $Z(s)$：路径 $s$ 的总成本
 - $P(s)$：约束违反的惩罚项
@@ -171,14 +169,12 @@ $P(s) = \sum_{k \in K} \left[ \max(0, q_{total} - Q) + \max(0, -b_{min}) \right]
 
 **锦标赛选择（Tournament Selection）：**
 从种群中随机选择 $t$ 个个体，选择其中适应度最高的个体作为父代。
-选择概率：
-$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}$
-其中$t$是锦标赛大小，通常取2-5
+选择概率：$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}$
+其中 $t$ 是锦标赛大小，通常取2-5
 
 **排序选择（Rank Selection）：**
-按适应度排序后，第$i$个个体被选中的概率：
-$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
-其中$s$是选择压力，$N$是种群大小
+按适应度排序后，第$i$个个体被选中的概率：$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
+其中 $s$ 是选择压力，$N$是种群大小
 
 ### 2. 交叉操作
 
