@@ -43,25 +43,17 @@
 
 ### 主目标函数
 最小化总成本：
-$
-\min Z = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{k \in K} \sum_{i \in F} \gamma u_{ik} + \sum_{k \in K} \sum_{i \in V} \beta t_{ik}
-$
+$\min Z = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{k \in K} \sum_{i \in F} \gamma u_{ik} + \sum_{k \in K} \sum_{i \in V} \beta t_{ik}$
 
 ### 分解目标
 1. **距离成本**：
-$
-C_{dist} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} d_{ij} \cdot c_{unit} \cdot x_{ijk}
-$
+$C_{dist} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} d_{ij} \cdot c_{unit} \cdot x_{ijk}$
 
 2. **充电成本**：
-$
-C_{charge} = \sum_{k \in K} \sum_{i \in F} \gamma \cdot u_{ik}
-$
+$C_{charge} = \sum_{k \in K} \sum_{i \in F} \gamma \cdot u_{ik}$
 
 3. **时间成本**：
-$
-C_{time} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} t_{ij} \cdot c_{time} \cdot x_{ijk}
-$
+$C_{time} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} t_{ij} \cdot c_{time} \cdot x_{ijk}$
 
 ---
 
@@ -69,57 +61,35 @@ $
 
 ### 1. 客户访问约束
 每个客户被访问一次：
-$
-\sum_{k \in K} \sum_{i \in V} x_{ijk} = 1, \quad \forall j \in C
-$
+$\sum_{k \in K} \sum_{i \in V} x_{ijk} = 1, \quad \forall j \in C$
 
 ### 2. 流量守恒约束
 车辆平衡：
-$
-\sum_{i \in V} x_{ijk} - \sum_{j \in V} x_{jik} = 0, \quad \forall k \in K, \forall i \in V
-$
+$\sum_{i \in V} x_{ijk} - \sum_{j \in V} x_{jik} = 0, \quad \forall k \in K, \forall i \in V$
 
 ### 3. 载重容量约束
 车辆载重限制：
-$
-q_i \leq y_{ik} \leq Q, \quad \forall k \in K, \forall i \in V
-$
-$
-y_{jk} \leq y_{ik} - q_i x_{ijk} + Q(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V
-$
+$q_i \leq y_{ik} \leq Q, \quad \forall k \in K, \forall i \in V$
+$y_{jk} \leq y_{ik} - q_i x_{ijk} + Q(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$
 
 ### 4. 电池容量约束
 电量始终≥0：
-$
-0 \leq b_{ik} \leq B, \quad \forall k \in K, \forall i \in V
-$
-$
-b_{jk} \leq b_{ik} - e_{ij} x_{ijk} + B(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V
-$
+$0 \leq b_{ik} \leq B, \quad \forall k \in K, \forall i \in V$
+$b_{jk} \leq b_{ik} - e_{ij} x_{ijk} + B(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$
 
 ### 5. 充电站约束
 充电站可多次访问：
-$
-b_{ik} + u_{ik} \leq B, \quad \forall k \in K, \forall i \in F
-$
+$b_{ik} + u_{ik} \leq B, \quad \forall k \in K, \forall i \in F$
 
 ### 6. 路径连续性约束
 从配送中心出发并返回：
-$
-\sum_{j \in V \setminus \{0\}} x_{0jk} = 1, \quad \forall k \in K
-$
-$
-\sum_{i \in V \setminus \{0\}} x_{i0k} = 1, \quad \forall k \in K
-$
+$\sum_{j \in V \setminus \{0\}} x_{0jk} = 1, \quad \forall k \in K$
+$\sum_{i \in V \setminus \{0\}} x_{i0k} = 1, \quad \forall k \in K$
 
 ### 7. 时间窗约束（可选）
-$
-t_{jk} \geq t_{ik} + s_i + t_{ij} - M(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V
-$
-$
-a_i \leq t_{ik} \leq b_i, \quad \forall k \in K, \forall i \in C
-$
-其中$[a_i, b_i]$是客户$i$的时间窗，$M$是足够大的常数
+$t_{jk} \geq t_{ik} + s_i + t_{ij} - M(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$
+$a_i \leq t_{ik} \leq b_i, \quad \forall k \in K, \forall i \in C$
+其中 $[a_i, b_i]$ 是客户 $i$ 的时间窗，$M$ 是足够大的常数
 
 ---
 
@@ -127,36 +97,24 @@ $
 
 ### 适应度函数
 对于个体$s$：
-$
-f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}
-$
+$f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}$
 
 ### 选择操作
 **锦标赛选择**：
-$
-P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}
-$
+$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t} f(j)}$
 
 **排序选择**：
-$
-P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}
-$
+$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
 
 ### 变异操作
 **交换变异**：
-$
-\text{Swap}(\pi, i, j): \pi[i] \leftrightarrow \pi[j]
-$
+$\text{Swap}(\pi, i, j): \pi[i] \leftrightarrow \pi[j]$
 
 **插入变异**：
-$
-\text{Insert}(\pi, i, j): \text{move } \pi[i] \text{ to position } j
-$
+$\text{Insert}(\pi, i, j): \text{move } \pi[i] \text{ to position } j$
 
 **反转变异**：
-$
-\text{Reverse}(\pi, i, j): \text{reverse subsequence } [i, j]
-$
+$\text{Reverse}(\pi, i, j): \text{reverse subsequence } [i, j]$
 
 ---
 
@@ -164,41 +122,27 @@ $
 
 ### 收敛性指标
 1. **收敛代数**：
-$
-G_{conv} = \min\{g \mid |f_{best}(g) - f_{best}(g-\Delta)| < \epsilon \cdot f_{best}(g)\}
-$
+$G_{conv} = \min\{g \mid |f_{best}(g) - f_{best}(g-\Delta)| < \epsilon \cdot f_{best}(g)\}$
 
 2. **改进率**：
-$
-\text{Improvement} = \frac{f_{initial} - f_{final}}{f_{initial}} \times 100\%
-$
+$\text{Improvement} = \frac{f_{initial} - f_{final}}{f_{initial}} \times 100\%$
 
 3. **收敛速率**：
-$
-\lambda = -\frac{1}{G} \ln\left(\frac{f_G - f_{\infty}}{f_0 - f_{\infty}}\right)
-$
+$\lambda = -\frac{1}{G} \ln\left(\frac{f_G - f_{\infty}}{f_0 - f_{\infty}}\right)$
 
 ### 算法质量指标
 1. **最优性差距**：
-$
-\text{Gap} = \frac{f_{alg} - f_{opt}}{f_{opt}} \times 100\%
-$
+$\text{Gap} = \frac{f_{alg} - f_{opt}}{f_{opt}} \times 100\%$
 
 2. **鲁棒性**：
-$
-\text{Robustness} = \frac{\sigma}{\mu} \times 100\%
-$
+$\text{Robustness} = \frac{\sigma}{\mu} \times 100\%$
 
 3. **计算效率**：
-$$
-\text{Efficiency} = \frac{\text{CPU时间}}{\text{问题规模}}
-$$
+$\text{Efficiency} = \frac{\text{CPU时间}}{\text{问题规模}} \times 100\%$
 
 ### 统计检验
 **t检验**：
-$$
-t = \frac{\bar{f}_{GA} - \bar{f}_{baseline}}{\sqrt{\frac{s_{GA}^2}{n_{GA}} + \frac{s_{baseline}^2}{n_{baseline}}}}
-$$
+$t = \frac{\bar{f}_{GA} - \bar{f}_{baseline}}{\sqrt{\frac{s_{GA}^2}{n_{GA}} + \frac{s_{baseline}^2}{n_{baseline}}}}$
 
 ---
 
@@ -206,36 +150,26 @@ $$
 
 ### 充电判断条件
 1. **电量安全约束**：
-$$
-b_{current} < \alpha \cdot B
-$$
+$b_{current} < \alpha \cdot B$
 
 2. **可达性约束**：
-$$
-b_{current} < e_{i,j} + \beta \cdot B
-$$
+$b_{current} < e_{i,j} + \beta \cdot B$
 
 3. **充电量决策**：
 **完全充电**：
-$$\nu_{charge} = B - b_{current}$$
+$\nu_{charge} = B - b_{current}$
 
 **部分充电**：
-$$\nu_{min} = \max\{e_{total} - b_{current}, 0\}
-$$
+$\nu_{min} = \max\{e_{total} - b_{current}, 0\}$
 
 **智能充电**：
-$$\nu^* = \arg\min_{\nu \in [0, B - b_{current}]} C_{total}(\nu)
-$$
+$\nu^* = \arg\min_{\nu \in [0, B - b_{current}]} C_{total}(\nu)$
 
 ### 充电时间
-$
-t_{charge} = \frac{\nu}{r_{charge}}
-$
+$t_{charge} = \frac{\nu}{r_{charge}}$
 
 ### 充电站选择
-$
-f^* = \arg\min_{f \in F} \left\{ d_{current,f} + \lambda \cdot t_{wait,f} + \mu \cdot C_{charge,f} \right\}
-$
+$f^* = \arg\min_{f \in F} \left\{ d_{current,f} + \lambda \cdot t_{wait,f} + \mu \cdot C_{charge,f} \right\}$
 
 ---
 
@@ -261,25 +195,17 @@ $
 
 ### 成本计算实例
 **距离成本**：
-$$
-C_{dist} = \sum_{i=1}^{n-1} d_{i,i+1} \cdot c_{fuel}
-$$
+$C_{dist} = \sum_{i=1}^{n-1} d_{i,i+1} \cdot c_{fuel}$
 
 **充电成本**：
-$$
-C_{charge} = \sum_{i \in \text{charging stations}} \Delta E_i \cdot c_{electricity}
-$$
+$C_{charge} = \sum_{i \in \text{charging stations}} \Delta E_i \cdot c_{electricity}$
 
 **时间成本**：
-$$
-C_{time} = \sum_{i=1}^{n} t_i \cdot c_{driver}
-$$
+$C_{time} = \sum_{i=1}^{n} t_i \cdot c_{driver}$
 
 ### 环保效益
 **碳排放减少**：
-$$
-\Delta CO_2 = \sum_{i=1}^{n} d_i \cdot (e_{gasoline} - e_{electric}) \cdot \text{conversion factor}
-$$
+$\Delta CO_2 = \sum_{i=1}^{n} d_i \cdot (e_{gasoline} - e_{electric}) \cdot \text{conversion factor}$
 
 ---
 
