@@ -72,9 +72,7 @@
 
 **目标函数：**
 最小化总成本：
-$
-\min Z = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{k \in K} \sum_{i \in F} \gamma u_{ik}
-$
+$\min Z = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{k \in K} \sum_{i \in F} \gamma u_{ik}$
 其中$\gamma$是单位充电成本系数
 
 **约束条件：**
