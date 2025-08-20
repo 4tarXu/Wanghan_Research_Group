@@ -18,8 +18,9 @@
 ## 📋 PPT文件结构
 
 ### 主文件
-- `EVRP算法讲解PPT.md` - 完整PPT框架（22张幻灯片）
+- `EVRP算法讲解PPT.md` - 完整PPT框架（22张幻灯片，已补充完整数学公式）
 - `PPT演讲稿.md` - 详细演讲指南
+- `EVRP数学公式完整版.md` - 完整的数学公式文档（Mathpix兼容）
 - `create_ppt_visuals.py` - 可视化生成脚本
 
 ### 配套图片
@@ -32,6 +33,13 @@ ppt_performance_comparison.png # 性能对比
 ppt_parameter_analysis.png   # 参数分析
 ppt_summary_infographic.png  # 总结信息图
 ```
+
+### 新增数学公式支持
+- **Mathpix兼容**：所有公式使用标准LaTeX语法
+- **完整数学模型**：包含EVRP问题的完整数学建模
+- **算法公式**：遗传算法各步骤的数学表达
+- **性能指标**：收敛分析和评估指标
+- **充电策略**：智能充电决策的数学模型
 
 ---
 
