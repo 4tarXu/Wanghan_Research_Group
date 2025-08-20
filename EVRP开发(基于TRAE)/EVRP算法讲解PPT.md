@@ -134,7 +134,7 @@ Depot → 客户3 → 客户1 → 充电站2 → 客户5 → Depot
 ### 综合成本计算
 
 **适应度函数定义：**
-对于每个个体（路径方案）$ s $ ，其适应度值为：
+对于每个个体（路径方案）$s$ ，其适应度值为：
 $f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}$
 
 其中：
@@ -174,7 +174,7 @@ $P(s) = \sum_{k \in K} \left[ \max(0, q_{total} - Q) + \max(0, -b_{min}) \right]
 其中 $t$ 是锦标赛大小，通常取2-5
 
 **排序选择（Rank Selection）：**
-按适应度排序后，第$i$个个体被选中的概率：$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
+按适应度排序后，第 $i$ 个个体被选中的概率：$P_{select}(i) = \frac{2 - s + 2(s - 1)\frac{i - 1}{N - 1}}{N}$
 其中 $s$ 是选择压力，$N$是种群大小
 
 ### 2. 交叉操作
@@ -195,32 +195,26 @@ $P(s) = \sum_{k \in K} \left[ \max(0, q_{total} - Q) + \max(0, -b_{min}) \right]
 ### 3. 变异操作
 
 **交换变异（Swap Mutation）：**
-随机选择两个位置$i$和$j$，交换这两个位置的客户：
+随机选择两个位置 $i$ 和 $j$ ，交换这两个位置的客户：
 $\text{原路径: } [..., c_i, ..., c_j, ...]$
 $\text{变异后: } [..., c_j, ..., c_i, ...]$
 
 **插入变异（Insertion Mutation）：**
-随机选择客户$c_i$和目标位置$j$，将$c_i$插入到位置$j$：
+随机选择客户 $c_i$ 和目标位置 $j$ ，将 $c_i$ 插入到位置 $j$ ：
 $\text{原路径: } [..., c_i, ..., c_j, c_{j+1}, ...]$
 $\text{变异后: } [..., c_j, c_i, c_{j+1}, ...]$
 
 **反转变异（Inversion Mutation）：**
 随机选择子路径$[i, j]$，反转该子路径：
-$$
-\text{原路径: } [..., c_i, c_{i+1}, ..., c_j, ...]
-$$
-$$
-\text{变异后: } [..., c_j, c_{j-1}, ..., c_i, ...]
-$$
+$\text{原路径: } [..., c_i, c_{i+1}, ..., c_j, ...]$
+$\text{变异后: } [..., c_j, c_{j-1}, ..., c_i, ...]$
 
 ### 4. 精英保留策略
 
 **精英保留（Elitism）：**
-保留适应度最高的$E$个个体直接进入下一代：
-$$
-\text{精英数量: } E = \lceil \epsilon \cdot N \rceil
-$$
-其中$\epsilon$是精英比例，通常取0.05-0.1，$N$是种群大小
+保留适应度最高的 $E$ 个个体直接进入下一代：
+$\text{精英数量: } E = \lceil \epsilon \cdot N \rceil$
+其中 $\epsilon$ 是精英比例，通常取0.05-0.1， $N$ 是种群大小
 
 ---
 
@@ -230,22 +224,16 @@ $$
 **充电判断条件：**
 
 1. **电量安全约束**：
-$
-b_{current} < \alpha \cdot B
-$
-其中$b_{current}$是当前电量，$B$是电池容量，$\alpha$是安全阈值（通常取0.2-0.3）
+$b_{current} < \alpha \cdot B$
+其中 $b_{current}$ 是当前电量，$B$ 是电池容量， $\alpha$ 是安全阈值（通常取0.2-0.3）
 
 2. **可达性约束**：
-$
-b_{current} < e_{i,j} + \beta \cdot B
-$
-其中$e_{i,j}$是到达下一个充电站的能耗，$\beta$是缓冲系数
+$b_{current} < e_{i,j} + \beta \cdot B$
+其中 $e_{i,j}$ 是到达下一个充电站的能耗，$\beta$ 是缓冲系数
 
 3. **成本优化约束**：
 充电后总成本降低：
-$
-\Delta C = C_{before} - C_{after} > 0
-$
+$\Delta C = C_{before} - C_{after} > 0$
 
 **充电策略数学模型：**
 
@@ -254,26 +242,21 @@ $\nu_{charge} = B - b_{current}$
 
 **2. 部分充电策略：**
 最小充电量满足：
-$\nu_{min} = \max\{e_{total} - b_{current}, 0\}
-$
-其中$e_{total}$是剩余路径的总能耗
+$\nu_{min} = \max\{e_{total} - b_{current}, 0\}$
+其中 $e_{total}$ 是剩余路径的总能耗
 
 **3. 智能充电策略：**
 优化充电量：
-$\nu^* = \arg\min_{\nu \in [0, B - b_{current}]} \left\{ C_{total}(\nu) \right\}
-$
+$\nu^* = \arg\min_{\nu \in [0, B - b_{current}]} \left\{ C_{total}(\nu) \right\}$
+其中 $C_{total}(\nu)$ 是总成本函数  
 
 **充电时间计算：**
-$
-t_{charge} = \frac{\nu}{r_{charge}}
-$
+$t_{charge} = \frac{\nu}{r_{charge}}$
 其中$r_{charge}$是充电速率（kWh/分钟）
 
 **充电站选择决策：**
 选择充电站$f^*$：
-$
-f^* = \arg\min_{f \in F} \left\{ d_{current,f} + \lambda \cdot t_{wait,f} + \mu \cdot C_{charge,f} \right\}
-$
+$f^* = \arg\min_{f \in F} \left\{ d_{current,f} + \lambda \cdot t_{wait,f} + \mu \cdot C_{charge,f} \right\}$
 其中：
 - $d_{current,f}$：到充电站的距离
 - $t_{wait,f}$：预计等待时间
