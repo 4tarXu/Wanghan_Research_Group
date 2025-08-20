@@ -1,0 +1,7 @@
+{
+  "problem": "evrp_10c_3s_uniform",
+  "total_cost": 12355.359247234479,
+  "num_vehicles": 1,
+  "feasible": false,
+  "computation_time": 6.431288957595825
+}

@@ -1,0 +1,44 @@
+{
+  "problem_name": "evrp_10c_3s_uniform",
+  "timestamp": "2025-08-20T17:33:16.640231",
+  "total_cost": 12355.359247234479,
+  "num_routes": 1,
+  "is_feasible": false,
+  "routes": [
+    {
+      "route_id": 1,
+      "sequence": [
+        10,
+        6,
+        1,
+        9,
+        101,
+        2,
+        5,
+        7,
+        8,
+        3,
+        100,
+        4
+      ],
+      "total_distance": 355.3592472344785,
+      "total_load": 0.0,
+      "total_time": 0.0,
+      "is_feasible": false,
+      "violations": [
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62371",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62379",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62372",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62375",
+        "\u8d85\u8f7d\u5728\u8282\u70b97",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62377",
+        "\u8d85\u8f7d\u5728\u8282\u70b98",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62378",
+        "\u8d85\u8f7d\u5728\u8282\u70b93",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62373",
+        "\u8d85\u8f7d\u5728\u8282\u70b94",
+        "\u8fdd\u53cd\u65f6\u95f4\u7a97\u5728\u5ba2\u62374"
+      ]
+    }
+  ]
+}
