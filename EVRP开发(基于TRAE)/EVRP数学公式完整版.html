@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EVRP数学公式完整版.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="evrp%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%AE%8C%E6%95%B4%E7%89%88">EVRP数学公式完整版</h1>
+<h2 id="%F0%9F%8E%AF-%E6%A6%82%E8%BF%B0">🎯 概述</h2>
+<p>本文档包含EVRP（电动车辆路径规划问题）的完整数学公式体系，适用于Mathpix Markdown插件，可直接用于PPT和学术论文。</p>
+<hr>
+<h2 id="%F0%9F%93%8A-%E7%AC%A6%E5%8F%B7%E5%AE%9A%E4%B9%89">📊 符号定义</h2>
+<h3 id="%E9%9B%86%E5%90%88%E5%92%8C%E7%B4%A2%E5%BC%95">集合和索引</h3>
+<ul>
+<li>$V = {0, 1, 2, ..., n}$：所有节点集合，0表示配送中心</li>
+<li>$C = {1, 2, ..., n}$：客户节点集合</li>
+<li>$F$：充电站节点集合</li>
+<li>$K$：车辆集合</li>
+<li>$(i,j)$：从节点$i$到节点$j$的边</li>
+</ul>
+<h3 id="%E5%8F%82%E6%95%B0">参数</h3>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$</td>
+<td>车辆最大载重容量</td>
+<td>kg</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>车辆电池最大容量</td>
+<td>kWh</td>
+</tr>
+<tr>
+<td>$d_{ij}$</td>
+<td>节点$i$到节点$j$的距离</td>
+<td>km</td>
+</tr>
+<tr>
+<td>$q_i$</td>
+<td>客户$i$的需求量</td>
+<td>kg</td>
+</tr>
+<tr>
+<td>$e_{ij}$</td>
+<td>从节点$i$到节点$j$的能耗</td>
+<td>kWh</td>
+</tr>
+<tr>
+<td>$t_{ij}$</td>
+<td>从节点$i$到节点$j$的行驶时间</td>
+<td>h</td>
+</tr>
+<tr>
+<td>$s_i$</td>
+<td>在节点$i$的服务时间</td>
+<td>h</td>
+</tr>
+<tr>
+<td>$c_{ij}$</td>
+<td>从节点$i$到节点$j$的行驶成本</td>
+<td>元</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>单位充电成本</td>
+<td>元/kWh</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>单位时间成本</td>
+<td>元/h</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E5%86%B3%E7%AD%96%E5%8F%98%E9%87%8F">决策变量</h3>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x_{ijk}$</td>
+<td>二进制</td>
+<td>车辆$k$是否从节点$i$直接到节点$j$</td>
+</tr>
+<tr>
+<td>$y_{ik}$</td>
+<td>连续</td>
+<td>车辆$k$到达节点$i$时的剩余载重</td>
+</tr>
+<tr>
+<td>$b_{ik}$</td>
+<td>连续</td>
+<td>车辆$k$到达节点$i$时的剩余电量</td>
+</tr>
+<tr>
+<td>$u_{ik}$</td>
+<td>连续</td>
+<td>车辆$k$在节点$i$的充电量</td>
+</tr>
+<tr>
+<td>$t_{ik}$</td>
+<td>连续</td>
+<td>车辆$k$到达节点$i$的时间</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%F0%9F%8E%AF-%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0">🎯 目标函数</h2>
+<h3 id="%E4%B8%BB%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0">主目标函数</h3>
+<p>最小化总成本：
+$\min Z = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} + \sum_{k \in K} \sum_{i \in F} \gamma u_{ik} + \sum_{k \in K} \sum_{i \in V} \beta t_{ik}$</p>
+<h3 id="%E5%88%86%E8%A7%A3%E7%9B%AE%E6%A0%87">分解目标</h3>
+<ol>
+<li><strong>距离成本</strong>：
+$C_{dist} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} d_{ij} \cdot c_{unit} \cdot x_{ijk}$</li>
+<li><strong>充电成本</strong>：
+$C_{charge} = \sum_{k \in K} \sum_{i \in F} \gamma \cdot u_{ik}$</li>
+<li><strong>时间成本</strong>：
+$C_{time} = \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} t_{ij} \cdot c_{time} \cdot x_{ijk}$</li>
+</ol>
+<hr>
+<h2 id="%E2%9A%96%EF%B8%8F-%E7%BA%A6%E6%9D%9F%E6%9D%A1%E4%BB%B6">⚖️ 约束条件</h2>
+<h3 id="1-%E5%AE%A2%E6%88%B7%E8%AE%BF%E9%97%AE%E7%BA%A6%E6%9D%9F">1. 客户访问约束</h3>
+<p>每个客户被访问一次：
+$\sum_{k \in K} \sum_{i \in V} x_{ijk} = 1, \quad \forall j \in C$</p>
+<h3 id="2-%E6%B5%81%E9%87%8F%E5%AE%88%E6%81%92%E7%BA%A6%E6%9D%9F">2. 流量守恒约束</h3>
+<p>车辆平衡：
+$\sum_{i \in V} x_{ijk} - \sum_{j \in V} x_{jik} = 0, \quad \forall k \in K, \forall i \in V$</p>
+<h3 id="3-%E8%BD%BD%E9%87%8D%E5%AE%B9%E9%87%8F%E7%BA%A6%E6%9D%9F">3. 载重容量约束</h3>
+<p>车辆载重限制：
+$q_i \leq y_{ik} \leq Q, \quad \forall k \in K, \forall i \in V$
+$y_{jk} \leq y_{ik} - q_i x_{ijk} + Q(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$</p>
+<h3 id="4-%E7%94%B5%E6%B1%A0%E5%AE%B9%E9%87%8F%E7%BA%A6%E6%9D%9F">4. 电池容量约束</h3>
+<p>电量始终≥0：
+$0 \leq b_{ik} \leq B, \quad \forall k \in K, \forall i \in V$
+$b_{jk} \leq b_{ik} - e_{ij} x_{ijk} + B(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$</p>
+<h3 id="5-%E5%85%85%E7%94%B5%E7%AB%99%E7%BA%A6%E6%9D%9F">5. 充电站约束</h3>
+<p>充电站可多次访问：
+$b_{ik} + u_{ik} \leq B, \quad \forall k \in K, \forall i \in F$</p>
+<h3 id="6-%E8%B7%AF%E5%BE%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E7%BA%A6%E6%9D%9F">6. 路径连续性约束</h3>
+<p>从配送中心出发并返回：
+$\sum_{j \in V \setminus {0}} x_{0jk} = 1, \quad \forall k \in K$
+$\sum_{i \in V \setminus {0}} x_{i0k} = 1, \quad \forall k \in K$</p>
+<h3 id="7-%E6%97%B6%E9%97%B4%E7%AA%97%E7%BA%A6%E6%9D%9F%E5%8F%AF%E9%80%89">7. 时间窗约束（可选）</h3>
+<p>$t_{jk} \geq t_{ik} + s_i + t_{ij} - M(1 - x_{ijk}), \quad \forall k \in K, \forall i,j \in V$
+$a_i \leq t_{ik} \leq b_i, \quad \forall k \in K, \forall i \in C$
+其中 $[a_i, b_i]$ 是客户 $i$ 的时间窗，$M$ 是足够大的常数</p>
+<hr>
+<h2 id="%F0%9F%A7%AC-%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%8F">🧬 遗传算法公式</h2>
+<h3 id="%E9%80%82%E5%BA%94%E5%BA%A6%E5%87%BD%E6%95%B0">适应度函数</h3>
+<p>对于个体$s$：
+$f(s) = \frac{1}{Z(s) + \alpha \cdot P(s)}$</p>
+<h3 id="%E9%80%89%E6%8B%A9%E6%93%8D%E4%BD%9C">选择操作</h3>
+<p><strong>锦标赛选择</strong>：
+$P_{select}(i) = \frac{f(i)}{\sum_{j=1}^{t}f(j)}$</p>
+<p><strong>排序选择</strong>：
+$P_{select}(i) = \frac{2-s+2(s-1)\frac{i-1}{N-1}}{N}$</p>
+<h3 id="%E5%8F%98%E5%BC%82%E6%93%8D%E4%BD%9C">变异操作</h3>
+<p><strong>交换变异</strong>：
+$\text{Swap}(\pi, i, j): \pi[i] \leftrightarrow \pi[j]$</p>
+<p><strong>插入变异</strong>：
+$\text{Insert}(\pi, i, j): \text{move } \pi[i] \text{ to position } j$</p>
+<p><strong>反转变异</strong>：
+$\text{Reverse}(\pi, i, j): \text{reverse subsequence } [i, j]$</p>
+<hr>
+<h2 id="%F0%9F%93%88-%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0%E6%8C%87%E6%A0%87">📈 性能评估指标</h2>
+<h3 id="%E6%94%B6%E6%95%9B%E6%80%A7%E6%8C%87%E6%A0%87">收敛性指标</h3>
+<ol>
+<li><strong>收敛代数</strong>：
+$G_{conv} = \min{g \mid |f_{best}(g) - f_{best}(g-\Delta)| &lt; \epsilon \cdot f_{best}(g)}$</li>
+<li><strong>改进率</strong>：
+$\text{Improvement} = \frac{f_{initial} - f_{final}}{f_{initial}} \times 100%$</li>
+<li><strong>收敛速率</strong>：
+$\lambda = -\frac{1}{G} \ln\left(\frac{f_G - f_{\infty}}{f_0 - f_{\infty}}\right)$</li>
+</ol>
+<h3 id="%E7%AE%97%E6%B3%95%E8%B4%A8%E9%87%8F%E6%8C%87%E6%A0%87">算法质量指标</h3>
+<ol>
+<li><strong>最优性差距</strong>：
+$\text{Gap} = \frac{f_{alg} - f_{opt}}{f_{opt}} \times 100%$</li>
+<li><strong>鲁棒性</strong>：
+$\text{Robustness} = \frac{\sigma}{\mu} \times 100%$</li>
+<li><strong>计算效率</strong>：
+$\text{Efficiency} = \frac{\text{CPU时间}}{\text{问题规模}} \times 100%$</li>
+</ol>
+<h3 id="%E7%BB%9F%E8%AE%A1%E6%A3%80%E9%AA%8C">统计检验</h3>
+<p><strong>t检验</strong>：
+$t = \frac{\bar{f}<em>{GA} - \bar{f}</em>{baseline}}{\sqrt{\frac{s_{GA}^2}{n_{GA}} + \frac{s_{baseline}^2}{n_{baseline}}}}$</p>
+<hr>
+<h2 id="%F0%9F%94%8D-%E5%85%85%E7%94%B5%E7%AD%96%E7%95%A5%E5%85%AC%E5%BC%8F">🔍 充电策略公式</h2>
+<h3 id="%E5%85%85%E7%94%B5%E5%88%A4%E6%96%AD%E6%9D%A1%E4%BB%B6">充电判断条件</h3>
+<ol>
+<li><strong>电量安全约束</strong>：
+$b_{current} &lt; \alpha \cdot B$</li>
+<li><strong>可达性约束</strong>：
+$b_{current} &lt; e_{i,j} + \beta \cdot B$</li>
+<li><strong>充电量决策</strong>：
+<strong>完全充电</strong>：
+$\nu_{charge} = B - b_{current}$</li>
+</ol>
+<p><strong>部分充电</strong>：
+$\nu_{min} = \max{e_{total} - b_{current}, 0}$</p>
+<p><strong>智能充电</strong>：
+$\nu^* = \arg\min_{\nu \in [0, B - b_{current}]} C_{total}(\nu)$</p>
+<h3 id="%E5%85%85%E7%94%B5%E6%97%B6%E9%97%B4">充电时间</h3>
+<p>$t_{charge} = \frac{\nu}{r_{charge}}$</p>
+<h3 id="%E5%85%85%E7%94%B5%E7%AB%99%E9%80%89%E6%8B%A9">充电站选择</h3>
+<p>$f^* = \arg\min_{f \in F} \left{ d_{current,f} + \lambda \cdot t_{wait,f} + \mu \cdot C_{charge,f} \right}$</p>
+<hr>
+<h2 id="%F0%9F%93%8A-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90">📊 复杂度分析</h2>
+<h3 id="%F0%9F%93%8A-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90">📊 复杂度分析</h3>
+<h3 id="%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6">时间复杂度</h3>
+<ul>
+<li><strong>路径评估</strong>：$O(n^2)$</li>
+<li><strong>选择操作</strong>：$O(N \log N)$</li>
+<li><strong>交叉操作</strong>：$O(n)$</li>
+<li><strong>变异操作</strong>：$O(n)$</li>
+<li><strong>整体算法</strong>：$O(G \cdot P \cdot n^2)$</li>
+</ul>
+<h3 id="%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6">空间复杂度</h3>
+<ul>
+<li><strong>种群存储</strong>：$O(P \cdot n)$</li>
+<li><strong>辅助数组</strong>：$O(n^2)$</li>
+<li><strong>总空间</strong>：$O(P \cdot n + n^2)$</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%8E%AF-%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8%E5%85%AC%E5%BC%8F">🎯 实际应用公式</h2>
+<h3 id="%E6%88%90%E6%9C%AC%E8%AE%A1%E7%AE%97%E5%AE%9E%E4%BE%8B">成本计算实例</h3>
+<p><strong>距离成本</strong>：
+$C_{dist} = \sum_{i=1}^{n-1} d_{i,i+1} \cdot c_{fuel}$</p>
+<p><strong>充电成本</strong>：
+$C_{charge} = \sum_{i \in \text{charging stations}} \Delta E_i \cdot c_{electricity}$</p>
+<p><strong>时间成本</strong>：
+$C_{time} = \sum_{i=1}^{n} t_i \cdot c_{driver}$</p>
+<h3 id="%E7%8E%AF%E4%BF%9D%E6%95%88%E7%9B%8A">环保效益</h3>
+<p><strong>碳排放减少</strong>：
+$\Delta CO_2 = \sum_{i=1}^{n} d_i \cdot (e_{gasoline} - e_{electric}) \cdot \text{conversion factor}$</p>
+<hr>
+<h2 id="%F0%9F%93%8B-%E5%8F%82%E6%95%B0%E6%8E%A8%E8%8D%90%E5%80%BC">📋 参数推荐值</h2>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>推荐值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>种群大小</td>
+<td>$P = 100$</td>
+<td>平衡计算效率和解质量</td>
+</tr>
+<tr>
+<td>最大代数</td>
+<td>$G = 500$</td>
+<td>确保充分收敛</td>
+</tr>
+<tr>
+<td>交叉率</td>
+<td>$p_c = 0.8$</td>
+<td>保持种群多样性</td>
+</tr>
+<tr>
+<td>变异率</td>
+<td>$p_m = 0.1$</td>
+<td>避免早熟收敛</td>
+</tr>
+<tr>
+<td>精英比例</td>
+<td>$\epsilon = 0.05$</td>
+<td>保留最优解</td>
+</tr>
+<tr>
+<td>锦标赛大小</td>
+<td>$t = 3$</td>
+<td>中等选择压力</td>
+</tr>
+<tr>
+<td>惩罚系数</td>
+<td>$\alpha = 10^6$</td>
+<td>强约束处理</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%F0%9F%94%97-%E5%85%AC%E5%BC%8F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">🔗 公式使用说明</h2>
+<h3 id="mathpix%E5%85%BC%E5%AE%B9%E6%80%A7">Mathpix兼容性</h3>
+<p>所有公式使用标准LaTeX语法，兼容Mathpix Markdown：</p>
+<ul>
+<li>行内公式：<code>$...$</code></li>
+<li>行间公式：<code>$$...$$</code></li>
+<li>对齐环境：<code>\begin{align}...\end{align}</code></li>
+</ul>
+<h3 id="%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4">复制粘贴</h3>
+<p>可直接复制到支持LaTeX的编辑器中使用，包括：</p>
+<ul>
+<li>Typora</li>
+<li>VSCode + Markdown插件</li>
+<li>Jupyter Notebook</li>
+<li>Overleaf</li>
+</ul>
+<hr>
+<p><em>文档版本：v2.0</em>
+<em>更新时间：2024年</em>
+<em>兼容：Mathpix Markdown</em></p>
+
+</body>
+</html>
