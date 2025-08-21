@@ -1,0 +1,21 @@
+{
+  "status": "optimal",
+  "objective_value": 81.74595128643412,
+  "solve_time": 0.045478105545043945,
+  "gap": 0.0,
+  "solution": {
+    "routes": [
+      [
+        "Customer(id=2, x=45, y=60, demand=6, service_time=2, time_window=(0, 100))",
+        "Customer(id=3, x=40, y=45, demand=7, service_time=2, time_window=(0, 100))"
+      ],
+      [
+        "Customer(id=1, x=60, y=55, demand=8, service_time=2, time_window=(0, 100))",
+        "Customer(id=5, x=65, y=50, demand=9, service_time=2, time_window=(0, 100))",
+        "Customer(id=4, x=55, y=40, demand=5, service_time=2, time_window=(0, 100))"
+      ]
+    ],
+    "num_vehicles": 2,
+    "total_distance": 81.74595128643412
+  }
+}

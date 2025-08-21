@@ -1,0 +1,80 @@
+{
+  "small": {
+    "problem_info": {
+      "customers": 8,
+      "stations": 2,
+      "capacity": 50.0,
+      "battery": 120.0
+    },
+    "gurobi": {
+      "total_distance": 207.16970944744506,
+      "num_vehicles": 1,
+      "status": "relaxed_optimal",
+      "computation_time": 60,
+      "gap": null
+    },
+    "genetic": {
+      "total_distance": 3228.9511652961783,
+      "num_vehicles": 1,
+      "status": "success",
+      "computation_time": 0.4922339916229248
+    },
+    "comparison": {
+      "distance_improvement": 93.5839937229759,
+      "time_ratio": 0.00820389986038208,
+      "vehicle_efficiency": 207.16970944744506
+    }
+  },
+  "medium": {
+    "problem_info": {
+      "customers": 12,
+      "stations": 4,
+      "capacity": 50.0,
+      "battery": 120.0
+    },
+    "gurobi": {
+      "total_distance": 291.26251418022787,
+      "num_vehicles": 1,
+      "status": "relaxed_optimal",
+      "computation_time": 60,
+      "gap": null
+    },
+    "genetic": {
+      "total_distance": 3404.3292623955776,
+      "num_vehicles": 2,
+      "status": "success",
+      "computation_time": 0.9282288551330566
+    },
+    "comparison": {
+      "distance_improvement": 91.44434948177515,
+      "time_ratio": 0.015470480918884278,
+      "vehicle_efficiency": 291.26251418022787
+    }
+  },
+  "large": {
+    "problem_info": {
+      "customers": 15,
+      "stations": 4,
+      "capacity": 50.0,
+      "battery": 120.0
+    },
+    "gurobi": {
+      "total_distance": 328.12296841780415,
+      "num_vehicles": 1,
+      "status": "relaxed_optimal",
+      "computation_time": 60,
+      "gap": null
+    },
+    "genetic": {
+      "total_distance": 6440.800092151561,
+      "num_vehicles": 2,
+      "status": "success",
+      "computation_time": 1.4760398864746094
+    },
+    "comparison": {
+      "distance_improvement": 94.90555577376732,
+      "time_ratio": 0.024600664774576824,
+      "vehicle_efficiency": 328.12296841780415
+    }
+  }
+}

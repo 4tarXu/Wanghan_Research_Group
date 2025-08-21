@@ -1,0 +1,8 @@
+{
+  "feasible": true,
+  "total_demand": 26,
+  "min_vehicles": 1,
+  "max_distance": 10.0,
+  "max_energy_needed": 10.0,
+  "issues": []
+}

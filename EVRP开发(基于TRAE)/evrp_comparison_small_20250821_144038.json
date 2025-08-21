@@ -1,0 +1,148 @@
+{
+  "instance_info": {
+    "problem_size": "small",
+    "num_customers": 8,
+    "num_stations": 2,
+    "vehicle_capacity": 30.0,
+    "vehicle_battery": 80.0,
+    "consumption_rate": 1.0,
+    "total_demand": 78.54226812593065,
+    "customers": [
+      {
+        "id": 1,
+        "x": 63.942679845788376,
+        "y": 2.5010755222666936,
+        "demand": 9.125439775536789,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 3.3392644288929363
+      },
+      {
+        "id": 2,
+        "x": 67.66994874229113,
+        "y": 89.21795677048453,
+        "demand": 6.304082489441242,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 4.531530918111622
+      },
+      {
+        "id": 3,
+        "x": 21.863797480360336,
+        "y": 50.53552881033624,
+        "demand": 5.398039545257954,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 3.193025904119891
+      },
+      {
+        "id": 4,
+        "x": 54.49414806032167,
+        "y": 22.044062204069668,
+        "demand": 13.838985258138631,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 6.85658274006696
+      },
+      {
+        "id": 5,
+        "x": 80.58192518328079,
+        "y": 69.81393949882269,
+        "demand": 10.103757747769878,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 2.9328769988706895
+      },
+      {
+        "id": 6,
+        "x": 33.65945451126267,
+        "y": 9.27458433801479,
+        "demand": 6.45074565250196,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 7.084966198084759
+      },
+      {
+        "id": 7,
+        "x": 80.71282732743802,
+        "y": 72.9731786693818,
+        "demand": 13.04342137182051,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 7.838694583876224
+      },
+      {
+        "id": 8,
+        "x": 55.2040631273227,
+        "y": 82.94046642529949,
+        "demand": 14.27779628546369,
+        "ready_time": 0,
+        "due_time": 1000,
+        "service_time": 7.170241401864663
+      }
+    ],
+    "stations": [
+      {
+        "id": 100,
+        "x": 25.0,
+        "y": 25.0
+      },
+      {
+        "id": 101,
+        "x": 75.0,
+        "y": 25.0
+      }
+    ],
+    "depot": {
+      "id": 0,
+      "x": 50.0,
+      "y": 50.0
+    }
+  },
+  "gurobi_result": {
+    "solver": "Gurobi",
+    "total_distance": Infinity,
+    "num_vehicles": 0,
+    "routes": [],
+    "computation_time": 0.2029120922088623,
+    "status": "optimal",
+    "gap": 0.0
+  },
+  "ga_result": {
+    "solver": "Genetic Algorithm",
+    "total_distance": 14306.904882074658,
+    "num_vehicles": 1,
+    "routes": [
+      {
+        "path": [
+          0,
+          2,
+          7,
+          5,
+          101,
+          1,
+          4,
+          6,
+          100,
+          3,
+          8,
+          0
+        ],
+        "demand": 0.0,
+        "distance": 306.90488207465677
+      }
+    ],
+    "computation_time": 0.25713205337524414,
+    "status": "success",
+    "population_size": 100,
+    "generations": 200
+  },
+  "comparison_metrics": {
+    "distance_difference": -Infinity,
+    "distance_ratio": 0.0,
+    "time_difference": 0.054219961166381836,
+    "time_ratio": 1.2672091178803278,
+    "vehicle_difference": 1
+  },
+  "timestamp": "2025-08-21T14:40:39.384540"
+}

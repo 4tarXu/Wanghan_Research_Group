@@ -1,0 +1,59 @@
+{
+  "instance_info": {
+    "problem_size": "small",
+    "num_customers": 8,
+    "num_stations": 2,
+    "vehicle_capacity": 30.0,
+    "vehicle_battery": 80.0,
+    "consumption_rate": 1.0,
+    "total_demand": 78.54226812593065,
+    "customers": [
+      "{'id': 1, 'x': 63.942679845788376, 'y': 2.5010755222666936, 'demand': 9.125439775536789, 'ready_time': 0, 'due_time': 1000, 'service_time': 3.3392644288929363}",
+      "{'id': 2, 'x': 67.66994874229113, 'y': 89.21795677048453, 'demand': 6.304082489441242, 'ready_time': 0, 'due_time': 1000, 'service_time': 4.531530918111622}",
+      "{'id': 3, 'x': 21.863797480360336, 'y': 50.53552881033624, 'demand': 5.398039545257954, 'ready_time': 0, 'due_time': 1000, 'service_time': 3.193025904119891}",
+      "{'id': 4, 'x': 54.49414806032167, 'y': 22.044062204069668, 'demand': 13.838985258138631, 'ready_time': 0, 'due_time': 1000, 'service_time': 6.85658274006696}",
+      "{'id': 5, 'x': 80.58192518328079, 'y': 69.81393949882269, 'demand': 10.103757747769878, 'ready_time': 0, 'due_time': 1000, 'service_time': 2.9328769988706895}",
+      "{'id': 6, 'x': 33.65945451126267, 'y': 9.27458433801479, 'demand': 6.45074565250196, 'ready_time': 0, 'due_time': 1000, 'service_time': 7.084966198084759}",
+      "{'id': 7, 'x': 80.71282732743802, 'y': 72.9731786693818, 'demand': 13.04342137182051, 'ready_time': 0, 'due_time': 1000, 'service_time': 7.838694583876224}",
+      "{'id': 8, 'x': 55.2040631273227, 'y': 82.94046642529949, 'demand': 14.27779628546369, 'ready_time': 0, 'due_time': 1000, 'service_time': 7.170241401864663}"
+    ],
+    "stations": [
+      "{'id': 100, 'x': 25.0, 'y': 25.0}",
+      "{'id': 101, 'x': 75.0, 'y': 25.0}"
+    ],
+    "depot": "{'id': 0, 'x': 50.0, 'y': 50.0}"
+  },
+  "gurobi_result": {
+    "solver": "Gurobi",
+    "total_distance": 305.0344389922917,
+    "num_vehicles": 2,
+    "routes": [
+      "[Customer(id=1, x=63.942679845788376, y=2.5010755222666936, demand=9.125439775536789, service_time=3.3392644288929363, time_window=(51.55298499148087, 81.55298499148087)), Customer(id=5, x=80.58192518328079, y=69.81393949882269, demand=10.103757747769878, service_time=2.9328769988706895, time_window=(67.00491505447468, 97.00491505447468)), Customer(id=7, x=80.71282732743802, y=72.9731786693818, demand=13.04342137182051, service_time=7.838694583876224, time_window=(26.497406404584744, 56.497406404584744))]",
+      "[Customer(id=2, x=67.66994874229113, y=89.21795677048453, demand=6.304082489441242, service_time=4.531530918111622, time_window=(2.0858053606649243, 32.08580536066492)), Customer(id=8, x=55.2040631273227, y=82.94046642529949, demand=14.27779628546369, service_time=7.170241401864663, time_window=(40.41465016797334, 70.41465016797335)), Customer(id=3, x=21.863797480360336, y=50.53552881033624, demand=5.398039545257954, service_time=3.193025904119891, time_window=(45.49191064456662, 75.49191064456662)), Customer(id=6, x=33.65945451126267, y=9.27458433801479, demand=6.45074565250196, service_time=7.084966198084759, time_window=(42.26082219568237, 72.26082219568238)), Customer(id=4, x=54.49414806032167, y=22.044062204069668, demand=13.838985258138631, service_time=6.85658274006696, time_window=(0.4549131774642712, 30.45491317746427))]"
+    ],
+    "computation_time": 0.09332418441772461,
+    "status": "relaxed_optimal",
+    "gap": 0.0,
+    "model_info": "{'num_variables': 0, 'num_constraints': 0}"
+  },
+  "ga_result": {
+    "solver": "Genetic Algorithm",
+    "total_distance": 14306.904882074658,
+    "num_vehicles": 1,
+    "routes": [
+      "{'path': [0, 2, 7, 5, 101, 1, 4, 6, 100, 3, 8, 0], 'demand': 0.0, 'distance': 306.90488207465677}"
+    ],
+    "computation_time": 0.26526808738708496,
+    "status": "success",
+    "population_size": 100,
+    "generations": 200
+  },
+  "comparison_metrics": {
+    "distance_difference": 14001.870443082365,
+    "distance_ratio": 46.90258886615815,
+    "time_difference": 0.17194390296936035,
+    "time_ratio": 2.842436706435378,
+    "vehicle_difference": -1
+  },
+  "timestamp": "2025-08-21T14:49:55.648197"
+}

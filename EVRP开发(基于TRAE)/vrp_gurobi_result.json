@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "objective": 92.15552445252149,
+  "routes": [
+    [
+      "Customer(id=4, x=55, y=40, demand=15, service_time=1, time_window=(0, 100))",
+      "Customer(id=3, x=40, y=45, demand=12, service_time=1, time_window=(0, 100))"
+    ],
+    [
+      "Customer(id=2, x=45, y=60, demand=8, service_time=1, time_window=(0, 100))",
+      "Customer(id=1, x=60, y=55, demand=10, service_time=1, time_window=(0, 100))",
+      "Customer(id=5, x=65, y=45, demand=7, service_time=1, time_window=(0, 100))"
+    ]
+  ],
+  "num_vehicles": 2,
+  "total_distance": 92.15552445252149
+}
