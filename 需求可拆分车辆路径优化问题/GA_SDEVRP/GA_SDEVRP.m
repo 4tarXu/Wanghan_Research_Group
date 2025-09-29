@@ -1,4 +1,4 @@
-function [mindis,bestind,Chrom,VehicleNum,TSPRoute,mindisbygen] = GA_SDVRP(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,GGAP,Pc,Pm,gen,TSPRoute,CityNum,mindis,bestind,BatteryCap,ChargeStations_index)
+function [mindis,bestind,Chrom,VehicleNum,TSPRoute,mindisbygen] = GA_SDVRP(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,GGAP,Pc,Pm,gen,TSPRoute,CityNum,mindis,bestind,BatteryCap,ChargeStations_index,ChargeStationNum,ChargeStationBatteryNum)
 
     %% 计算适应度(注意，本算法框架的遗传操作都是基于TSP架构进行)
     [TotalCost,FitnV]=Fitness(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);  %计算路径长度
@@ -27,5 +27,9 @@ function [mindis,bestind,Chrom,VehicleNum,TSPRoute,mindisbygen] = GA_SDVRP(Dista
     %% 亲代重插入子代
     [TSPRoute,Chrom,VehicleNum]=Reins(Chrom,Chrom_sel,TSPRoute,TSPRoute_sel,FitnV,VehicleNum_sel,VehicleNum);
 
-    %% 邻域搜索操作
+    %% 邻域搜索操作（注意：邻域搜索操作和剔除冗余充电站操作顺序可以互换，实验阶段检测一下先后顺序对时间的影响）
+    
     Chrom = localsearch(Chrom,Distance,Demand,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
+
+    %% 剔除冗余充电站（注意：邻域搜索操作和剔除冗余充电站操作顺序可以互换，实验阶段检测一下先后顺序对时间的影响）
+    Chrom = RemoveRedundantChargers(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index,ChargeStationNum,ChargeStationBatteryNum);

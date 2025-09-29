@@ -19,7 +19,7 @@ for i = 1:NIND_size
 Subroute_index= find(Chrom(i,:)==1);
 
 
-%% 对第一个子路径单独操作(因为第一条子路径起始点-1后索引不可行)
+%% 对第一个子路径单独操作(因为第一条子路径起始点-1后索引不可行,所以只判断最后一个客户点是否是需求拆分点)
 
 
     %提取出子路径的起点和终点(数字1的位置序号)
@@ -27,14 +27,37 @@ Subroute_index= find(Chrom(i,:)==1);
     Subroute_end = Subroute_index(2);
     Subpath = Chrom(i,Subroute_start+1:Subroute_end-1);
 
-
+   
     % 判断子路径的最后一个客户是不是需求拆分点
     if Chrom(i,Subroute_end-1)==Chrom(i,Subroute_end+1) 
     % 如果if条件成立，说明节点是需求拆分点，则需要进行邻域搜索
-        
-        % --- 以下是随机路径方法，原理是对存在需求拆分点的子路径进行随机换位，提高解的多样性。速度快，但不保证一定最优 
-            Random_Subpath = Subpath(randperm(length(Subpath)));
-            Chrom_new(Subroute_start+1:Subroute_end-1) = Random_Subpath;
+
+         % --- 以下是随机路径方法，原理是对存在需求拆分点的子路径进行随机换位，提高解的多样性。速度快，但不保证一定最优 
+             % Random_Subpath = Subpath(randperm(length(Subpath)));
+             % Chrom_new(Subroute_start+1:Subroute_end-1) = Random_Subpath;
+             %  % 计算邻域搜索后路径长度
+             %  [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index); %邻域搜索后路径长度
+             %  [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
+             % 
+             %  % 如果找到更优路径，则进行路径替换
+             %  if ttlDistance1 < ttlDistance2
+             %      Chrom(i,:)=Chrom_new;
+             %      break
+             %  else
+             %      Chrom_new=Chrom(i,:);
+             %  end 
+ 
+        % --- 以下是换位操作方法，原理是对每一个需求拆分点和前边的节点换位，并对比适应度(精度高但速度慢)    
+      SplitNode_index = Subroute_end-1; %确定需求拆分点编号
+      SplitNode = Chrom(i,SplitNode_index);
+      SwapNum = Subroute_end - Subroute_start - 2; %换位交换检验次数
+      
+         % 执行换位操作，换位次数等于 Subroute_end - Subroute_start - 2
+         for k = 1:SwapNum
+             %重构Chrom_new路径
+             Chrom_new(i,SplitNode_index) = Chrom(i,SplitNode_index-k);
+             Chrom_new(i,SplitNode_index-k) = SplitNode;
+      
              % 计算邻域搜索后路径长度
              [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index); %邻域搜索后路径长度
              [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
@@ -46,13 +69,15 @@ Subroute_index= find(Chrom(i,:)==1);
              else
                  Chrom_new=Chrom(i,:);
              end 
+      
+         end
+
     end
 
-% (第二条子路径开始)对每一个子路径执行操作
+%% (第二条子路径开始)对每一个子路径执行操作
 for j =2:length(Subroute_index)
     % 设立终止规则，提前跳出for循环，因为在设置Chrom时候是节点数量的三倍，路径中一定存在非常多的1用作占位符
-    if Subroute_index(j)== Subroute_index(j+1)-1 % 如果存在两个连续的1，则子路径为空，种植对于j的for循环，直接进入下一个i染色体搜索
-
+    if Subroute_index(j)== Subroute_index(j+1)-1 % 如果存在两个连续的1，则子路径为空，中指对于j的for循环，直接进入下一个i染色体搜索
         break;
     end
 
@@ -67,8 +92,31 @@ for j =2:length(Subroute_index)
     % 如果if条件成立，说明节点是需求拆分点，则需要进行邻域搜索
         
         % --- 以下是随机路径方法，原理是对存在需求拆分点的子路径进行随机换位，提高解的多样性。速度快，但不保证一定最优 
-            Random_Subpath = Subpath(randperm(length(Subpath)));
-            Chrom_new(Subroute_start+1:Subroute_end-1) = Random_Subpath;
+            % Random_Subpath = Subpath(randperm(length(Subpath)));
+            % Chrom_new(Subroute_start+1:Subroute_end-1) = Random_Subpath;
+            %  % 计算邻域搜索后路径长度
+            %  [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index); %邻域搜索后路径长度
+            %  [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
+            % 
+            %  % 如果找到更优路径，则进行路径替换
+            %  if ttlDistance1 < ttlDistance2
+            %      Chrom(i,:)=Chrom_new;
+            %      break
+            %  else
+            %      Chrom_new=Chrom(i,:);
+            %  end 
+
+        % --- 以下是换位操作方法，原理是对每一个需求拆分点和前边的节点换位，并对比适应度(精度高但速度慢)    
+      SplitNode_index = Subroute_end-1; %确定需求拆分点编号
+      SplitNode = Chrom(i,SplitNode_index);
+      SwapNum = Subroute_end - Subroute_start - 2; %换位交换检验次数
+      
+         % 执行换位操作，换位次数等于 Subroute_end - Subroute_start - 2
+         for k = 1:SwapNum
+             %重构Chrom_new路径
+             Chrom_new(i,SplitNode_index) = Chrom(i,SplitNode_index-k);
+             Chrom_new(i,SplitNode_index-k) = SplitNode;
+      
              % 计算邻域搜索后路径长度
              [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index); %邻域搜索后路径长度
              [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
@@ -80,41 +128,41 @@ for j =2:length(Subroute_index)
              else
                  Chrom_new=Chrom(i,:);
              end 
-
-        % --- 以下是换位操作方法，原理是对每一个需求拆分点和前边的节点换位，并对比适应度(精度高但速度慢)    
-     % SplitNode_index = Subroute_end-1; %确定需求拆分点编号
-     % SplitNode = Chrom(i,SplitNode_index);
-     % SwapNum = Subroute_end - Subroute_start - 2; %换位交换检验次数
-     % 
-     %    % 执行换位操作，换位次数等于 Subroute_end - Subroute_start - 2
-     %    for k = 1:SwapNum
-     %        %重构Chrom_new路径
-     %        Chrom_new(i,SplitNode_index) = Chrom(i,SplitNode_index-k);
-     %        Chrom_new(i,SplitNode_index-k) = SplitNode;
-     % 
-     %        % 计算邻域搜索后路径长度
-     %        [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon); %邻域搜索后路径长度
-     %        [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon);
-     % 
-     %        % 如果找到更优路径，则进行路径替换
-     %        if ttlDistance1 < ttlDistance2
-     %            Chrom(i,:)=Chrom_new;
-     %            break
-     %        else
-     %            Chrom_new=Chrom(i,:);
-     %        end 
-     % 
-     %    end
+      
+         end
 
     end
 
-     % 判断子路径的第一个一个客户是不是需求拆分点
+     % 判断子路径的第一个客户是不是需求拆分点
      if Chrom(i,Subroute_start+1)==Chrom(i,Subroute_start-1) && j>1
          % 如果if条件成立，说明节点是需求拆分点，则需要进行邻域搜索
         
-        % --- 以下是随机路径方法，原理是对存在需求拆分点的子路径进行随机换位，提高解的多样性。速度快，但不保证一定最优 
-            Random_Subpath = Subpath(randperm(length(Subpath)));
-            Chrom_new(Subroute_start+1:Subroute_end-1) = Random_Subpath;
+        % % --- 以下是随机路径方法，原理是对存在需求拆分点的子路径进行随机换位，提高解的多样性。速度快，但不保证一定最优 
+        %     Random_Subpath = Subpath(randperm(length(Subpath)));
+        %     Chrom_new(Subroute_start+1:Subroute_end-1) = Random_Subpath;
+        %      % 计算邻域搜索后路径长度
+        %      [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index); %邻域搜索后路径长度
+        %      [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
+        % 
+        %      % 如果找到更优路径，则进行路径替换
+        %      if ttlDistance1 < ttlDistance2
+        %          Chrom(i,:)=Chrom_new;
+        %          break
+        %      else
+        %          Chrom_new=Chrom(i,:);
+        %      end 
+     
+      % --- 以下是换位操作方法，原理是对每一个需求拆分点和前边的节点换位，并对比适应度(精度高但速度慢)    
+      SplitNode_index = Subroute_start+1; %确定需求拆分点编号
+      SplitNode = Chrom(i,SplitNode_index);
+      SwapNum = Subroute_end - Subroute_start - 2; %换位交换检验次数
+      
+         % 执行换位操作，换位次数等于 Subroute_end - Subroute_start - 2
+         for k = 1:SwapNum
+             %重构Chrom_new路径
+             Chrom_new(i,SplitNode_index) = Chrom(i,SplitNode_index+k);
+             Chrom_new(i,SplitNode_index+k) = SplitNode;
+      
              % 计算邻域搜索后路径长度
              [ttlDistance1,~]=Fitness(Distance,Demand,Chrom_new,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index); %邻域搜索后路径长度
              [ttlDistance2,~]=Fitness(Distance,Demand,Chrom(i,:),Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
@@ -126,7 +174,13 @@ for j =2:length(Subroute_index)
              else
                  Chrom_new=Chrom(i,:);
              end 
-     
+      
+         end
+
+
+
+
+
      
      end
 

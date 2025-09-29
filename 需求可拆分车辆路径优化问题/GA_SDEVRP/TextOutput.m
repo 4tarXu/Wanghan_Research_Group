@@ -1,4 +1,4 @@
-function TextOutput(Distance,Demand,route,Capacity,bestind,ChargeStations_index,ChargeStationNum)
+function TextOutput(Distance,Demand,route,Capacity,bestind,ChargeStations_index,ChargeStationNum,ChargeStationBatteryNum)
 %% 输出路径函数
 %输入：route 路径
 %输出：p 路径文本形式
@@ -6,7 +6,8 @@ function TextOutput(Distance,Demand,route,Capacity,bestind,ChargeStations_index,
 %% 使用充电站数量
     UsedChargeStationNum = size(intersect(ChargeStations_index,bestind),2);
 
-    fprintf('使用充电站个数： %s 个 \n',num2str(UsedChargeStationNum));
+    fprintf('所有车辆总充电次数： %s 个 \n',num2str(UsedChargeStationNum));
+    fprintf('使用充电站编号（在Best Route中序号需减1）： %s  \n',num2str(intersect(ChargeStations_index,bestind)));
     fprintf('本算例中充电站总个数： %s 个 \n',num2str(ChargeStationNum));
 
 %% 需求拆分点信息

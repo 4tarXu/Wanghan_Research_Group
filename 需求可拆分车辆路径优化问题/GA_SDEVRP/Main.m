@@ -4,7 +4,14 @@ close all %删除其句柄未隐藏的所有图窗
 tic % 保存当前时间(算法执行时间开始时刻标记)
 
 %% 代码改进空间：
+% 1. 装载率计算问题
+% 2. 更改Fitness中换电站，如果访问则增加对应的行驶里程
+% 3. 换电站固定建设成本与换电成本
 
+%% 代码改进工作
+% 单个充电站位置设置多个充电站，实现换电定容操作，已经可以保证一个充电站被多个客户访问。（同时可以保证一辆车访问一个充电站多次）
+% （待修改：）Best Route中，充电站编号与ChargeStations_index中的序号相差1
+% 生成3次不同算例，充电站使用相同的内容
 
 %% 算例设置区域
 
@@ -13,10 +20,11 @@ tic % 保存当前时间(算法执行时间开始时刻标记)
       instance=importdata('./instance/R/R101.txt');
 % 
 % % 设置算例规模(客户点数量)
-      CustomerNum = 100; % 设置客户点数量为
-      ChargeStationNum = 10; % 设置充电站数量
-% % 生成算例
-      [City,Demand,Distance,ChargeStations_index,CityNum]=sdvrp_instance(instance,CustomerNum,ChargeStationNum);
+      Instance_Layer = 3; % 设置算例层数为3，即生成3次算例，但要求充电站位置相同
+      CustomerNum = 30; % 设置客户点数量为
+      ChargeStationNum = 5; % 设置充电站位置数量，每个位置设置多个"重合"充电站，用于表示需要电池数量。最后根据选择情况定容。   
+      ChargeStationBatteryNum = 1;% 设置电池数量：
+      [Sturct_instances,City,Demand,Distance,ChargeStations_index,CityNum]=sdvrp_instance(instance,CustomerNum,ChargeStationNum,ChargeStationBatteryNum,Instance_Layer);
 
 % --------代码自带测试算例
 % 以下是问题规模为10的测试算例
@@ -28,8 +36,8 @@ tic % 保存当前时间(算法执行时间开始时刻标记)
 
 % 车辆相关参数设置：
 Capacity = 200; % 设置车容量 原参数：12
-VehicleCost = 800;% 设置车辆成本参数，用于控制与平衡车辆使用的数量与车辆行驶距离的关系
-Travelcon = 500;  % 车辆最大行驶里程
+VehicleCost = 1000;% 设置车辆成本参数，用于控制与平衡车辆使用的数量与车辆行驶距离的关系
+Travelcon = 150;  % 车辆最大行驶里程
 
 % 车辆电力相关参数(目前均没有使用，因为算法逻辑是如何客户访问充电站，则行驶距离清零，只要满足里程约束即可)
 %   - 未使用的主要原因：目前算法没有考虑时间相关约束，即不考虑充电时间和访问时间
@@ -41,60 +49,32 @@ MaxRange = BatteryCap / EnergyConsump; % 最大续航里程（km）= 电池容�
 
 %% 遗传算法相关参数设置
 NIND=30;      %种群大小
-MAXGEN=1000;     %最大遗传代数
-GGAP=0.9;       %代沟概率
-Pc=0.9;         %交叉概率
+MAXGEN=500;     %最大遗传代数
+GGAP=0.8;       %代沟概率
+Pc=0.8;         %交叉概率
 Pm=0.05;        %变异概率
+
+% 创建绘图
+figure;
+
+for k = 1:Instance_Layer
+
 
 %% 为预分配内存而初始化的0矩阵
 mindis = zeros(1,MAXGEN);
-bestind = zeros(1,CityNum*2+1);
+bestind = zeros(1,Sturct_instances(k).CityNum*2+1);
 
 %% 初始化种群(注意，本算法框架的遗传操作都是基于TSP架构进行)
-[TSPRoute,Chrom,VehicleNum]=InitPop(NIND,CityNum,Demand,Capacity,Travelcon,Distance,BatteryCap,ChargeStations_index);
+[TSPRoute,Chrom,VehicleNum]=InitPop(NIND,Sturct_instances(k).CityNum,Sturct_instances(k).Demand,Capacity,Travelcon,Sturct_instances(k).Distance,BatteryCap,Sturct_instances(k).ChargeStations_index);
 
 %% 迭代
 gen=1;
 while gen <= MAXGEN
-    %% 遗传算法测试封包（冻结：封包无法找到算法问题）
-% [mindis,bestind,Chrom,VehicleNum,TSPRoute,mindisbygen] = GA_SDVRP(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,GGAP,Pc,Pm,gen,TSPRoute,CityNum,mindis,bestind,BatteryCap,ChargeStations_index)
-
-% 代码测试：如通过则修正封包
-[TotalCost,FitnV]=Fitness(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);  %计算路径长度
-    [mindisbygen,bestindex] = min(TotalCost);
-    mindis(gen) = mindisbygen; % 最小适应值fit的集
-	bestind = Chrom(bestindex,:); % 最优个体集
-    bestind = bestind(bestind>0); %剔除最优个体中非零元素
-    
-    %% 选择（允许一个染色体被选择多次）(注意，本算法框架的遗传操作都是基于TSP架构进行)
-    SelCh=Select(TSPRoute,FitnV,GGAP);
-
-    %% 交叉操作(注意，本算法框架的遗传操作都是基于TSP架构进行)
-    SelCh=Crossover(SelCh,Pc);
- 
-    %% 变异(注意，本算法框架的遗传操作都是基于TSP架构进行)
-     % fprintf('变异操作后')
-     SelCh=Mutate(SelCh,Pm,CityNum);
-    %% 逆转操作(注意，本算法框架的遗传操作都是基于TSP架构进行)
-
-    TSPRoute_sel = SelCh;   % 保存经过遗传操作的TSP路径，与Chrom对应
-
-    %% (注意，本算法框架的遗传操作都是基于TSP架构进行)TSP路径转SDVRP路径,即把TSPRoute转化为符合要求的Chrom数组  
-
-    [Chrom_sel,VehicleNum_sel] = TSPtoChrom(TSPRoute_sel,CityNum,Distance,Travelcon,Demand,Capacity);
-
-    %% 亲代重插入子代
-    [TSPRoute,Chrom,VehicleNum]=Reins(Chrom,Chrom_sel,TSPRoute,TSPRoute_sel,FitnV,VehicleNum_sel,VehicleNum);
-
-    %% 邻域搜索操作（注意：邻域搜索操作和剔除冗余充电站操作顺序可以互换，实验阶段检测一下先后顺序对时间的影响）
-    
-    Chrom = localsearch(Chrom,Distance,Demand,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
-
-    %% 剔除冗余充电站（注意：邻域搜索操作和剔除冗余充电站操作顺序可以互换，实验阶段检测一下先后顺序对时间的影响）
-    Chrom = RemoveRedundantChargers(Distance,Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index,ChargeStationNum);
+    %% 遗传算法封包运行
+ [mindis,bestind,Chrom,VehicleNum,TSPRoute,mindisbygen] = GA_SDEVRP(Sturct_instances(k).Distance,Sturct_instances(k).Demand,Chrom,Capacity,Travelcon,VehicleNum,VehicleCost,GGAP,Pc,Pm,gen,TSPRoute,Sturct_instances(k).CityNum,mindis,bestind,BatteryCap,Sturct_instances(k).ChargeStations_index,ChargeStationNum,ChargeStationBatteryNum);
 
     %% 显示此代信息
-    fprintf('Iteration = %d, Min Distance = %.2f km  \n',gen,mindisbygen)
+    % fprintf('Iteration = %d, Min Distance = %.2f km  \n',gen,mindisbygen)
     %% 更新迭代次数
     gen=gen+1;
 end
@@ -116,17 +96,22 @@ bestroute=bestroute-1;  % 编码各减1，与文中的编码一致
 disp('-------------------------------------------------------------')
 toc %显示运行时间
 fprintf('Total Cost = %s km \n',num2str(mindisever))
-TextOutput(Distance,Demand,bestroute,Capacity,bestind,ChargeStations_index,ChargeStationNum)  %显示最优路径
+TextOutput(Sturct_instances(k).Distance,Sturct_instances(k).Demand,bestroute,Capacity,bestind,Sturct_instances(k).ChargeStations_index,ChargeStationNum,ChargeStationBatteryNum)  %显示最优路径
 disp('-------------------------------------------------------------')
 
-%% 迭代图
- figure
-  plot(mindis,'LineWidth',2) %展示目标函数值历史变化
-  xlim([1 gen-1]) %设置 x 坐标轴范围
-  set(gca, 'LineWidth',1)
-  xlabel('Iterations')
-  ylabel('Min Distance(km)')
-  title('GA Optimization Process')
 
-%% 绘制实际路线
-       DrawPath(bestroute,City,ChargeStations_index)
+%% 迭代图
+   subplot(2, Instance_Layer, k); %绘制第k个图
+   plot(mindis,'LineWidth',2) %展示目标函数值历史变化
+   xlim([1 gen-1]) %设置 x 坐标轴范围
+   set(gca, 'LineWidth',1)
+   xlabel('Iterations')
+   ylabel('Min Distance(km)')
+   title('GA Optimization Process')
+   grid on;
+    %% 绘制实际路线
+   DrawPath_pro(bestroute,Sturct_instances(k).City,Sturct_instances(k).ChargeStations_index,Instance_Layer,k)
+end
+   
+ 
+
