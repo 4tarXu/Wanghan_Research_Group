@@ -47,9 +47,7 @@ $
 
 1. **客户服务约束**：每个客户至少被一辆车服务一次，最多被2辆车服务
 
-   $
-   \sum_{j \in V} \sum_{k \in K} x_{ijk} \geq 1, \quad \forall i \in C
-   $
+   $\sum_{j \in V} \sum_{k \in K} x_{ijk} \geq 1, \quad \forall i \in C$
 
    $
    \sum_{j \in V} \sum_{k \in K} x_{ijk} \leq 2, \quad \forall i \in C
