@@ -39,9 +39,7 @@
 
 最小化总运输距离：
 
-$
-\min \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk}
-$
+$\min \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk}$
 
 ### 3.3 约束条件
 
