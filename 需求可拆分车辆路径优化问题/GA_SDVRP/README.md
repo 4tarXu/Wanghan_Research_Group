@@ -47,9 +47,7 @@ $\min \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk}$
 
    $\sum_{j \in V} \sum_{k \in K} x_{ijk} \geq 1, \quad \forall i \in C$
 
-   $
-   \sum_{j \in V} \sum_{k \in K} x_{ijk} \leq 2, \quad \forall i \in C
-   $
+   $$\sum_{j \in V} \sum_{k \in K} x_{ijk} \leq 2, \quad \forall i \in C$$
 2. **车辆访问约束**：同一辆车对同一客户点最多访问一次
 
    $
