@@ -39,86 +39,86 @@
 
 最小化总运输距离：
 
-$$
+$
 \min \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk}
-$$
+$
 
 ### 3.3 约束条件
 
 1. **客户服务约束**：每个客户至少被一辆车服务一次，最多被2辆车服务
 
-   $$
+   $
    \sum_{j \in V} \sum_{k \in K} x_{ijk} \geq 1, \quad \forall i \in C
-   $$
+   $
 
-   $$
+   $
    \sum_{j \in V} \sum_{k \in K} x_{ijk} \leq 2, \quad \forall i \in C
-   $$
+   $
 2. **车辆访问约束**：同一辆车对同一客户点最多访问一次
 
-   $$
+   $
    \sum_{j \in V} x_{ijk} \leq 1, \quad \forall i \in C, \forall k \in K
-   $$
+   $
 3. **流量守恒约束**：确保每辆车从配送中心出发并最终返回配送中心
 
-   $$
+   $
    \sum_{i \in V} x_{ijk} = \sum_{i \in V} x_{jik}, \quad \forall j \in C, \forall k \in K
-   $$
+   $
 4. **车辆出发和返回约束**：每辆车从配送中心出发并返回
 
-   $$
+   $
    \sum_{j \in V} x_{1jk} \leq 1, \quad \forall k \in K
-   $$
+   $
 
-   $$
+   $
    \sum_{j \in V} x_{j1k} \leq 1, \quad \forall k \in K
-   $$
+   $
 5. **卸货量约束**：车辆在客户点的卸货量非负且与路径相关
 
-   $$
+   $
    U_{ik} \geq 0, \quad \forall i \in C, \forall k \in K
-   $$
+   $
 
-   $$
+   $
    U_{ik} \leq Q \cdot \sum_{j \in V} x_{ijk}, \quad \forall i \in C, \forall k \in K
-   $$
+   $
 6. **车辆容量约束**：每辆车的总卸货量不能超过其容量
 
-   $$
+   $
    \sum_{i \in C} U_{ik} \leq Q, \quad \forall k \in K
-   $$
+   $
 7. **需求满足约束**：每个客户的需求必须被完全满足
 
-   $$
+   $
    \sum_{k \in K} U_{ik} = d_i, \quad \forall i \in C
-   $$
+   $
 8. **载货量约束**：车辆到达和离开节点时的载货量非负且与路径相关
 
-   $$
+   $
    L_{ik} \geq 0, \quad \forall i \in V, \forall k \in K
-   $$
+   $
 
-   $$
+   $
    L_{ik} \leq Q \cdot \sum_{j \in V} x_{ijk}, \quad \forall i \in V, \forall k \in K
-   $$
+   $
 
-   $$
+   $
    A_{ik} \geq 0, \quad \forall i \in V, \forall k \in K
-   $$
+   $
 
-   $$
+   $
    A_{ik} \leq Q \cdot \sum_{j \in V} x_{ijk}, \quad \forall i \in V, \forall k \in K
-   $$
+   $
 9. **载货量连续性约束**：运输弧上载货量不变
 
-   $$
+   $
    -Q \cdot (1 - x_{ijk}) \leq L_{ik} - A_{jk} \leq Q \cdot (1 - x_{ijk}), \quad \forall i,j \in V, \forall k \in K
-   $$
+   $
 10. **货物守恒约束**：到达客户点后的载货量减去卸货量等于离开时的载货量
 
-    $$
+    $
     A_{ik} - U_{ik} = L_{ik}, \quad \forall i \in C, \forall k \in K
-    $$
+    $
 
 ## 4. YALMIP与GUROBI调用
 
