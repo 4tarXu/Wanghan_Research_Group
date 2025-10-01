@@ -127,7 +127,6 @@ load('../test_data/Travelcon.mat')	  %行程约束
     if sol.problem ~= 0
         % 提取解
         x_val = value(Xijk);
-        u_val = value(Mu);
         
         % 输出结果
         disp('求解成功！');

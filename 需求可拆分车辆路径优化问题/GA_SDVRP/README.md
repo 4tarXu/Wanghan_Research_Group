@@ -1,197 +1,243 @@
-# GA_SDVRP - 需求可拆分车辆路径问题遗传算法求解器
+# SDVRP_MTZ_gurobi：基于YALMIP和GUROBI的需求可拆分车辆路径问题求解器
 
-## 问题描述
+## 1. 简介
 
-需求可拆分车辆路径问题（Split Delivery Vehicle Routing Problem, SDVRP）是经典车辆路径问题（VRP）的一个重要变种。在传统VRP中，每个客户点的需求必须由一个车辆一次性满足，而在SDVRP中，允许将单个客户的需求拆分成多个部分，由不同的车辆分别配送。
+本代码实现了一种基于数学规划的方法，使用YALMIP优化建模工具和GUROBI求解器来求解需求可拆分车辆路径问题（Split Delivery Vehicle Routing Problem, SDVRP）。与传统的启发式算法（如仓库中的遗传算法代码）不同，本方法通过精确数学模型确保找到最优解。
 
-### 数学模型
+## 2. 问题描述
 
-#### 符号定义
+需求可拆分车辆路径问题（SDVRP）是经典车辆路径问题（VRP）的一个重要变种。在传统VRP中，每个客户点的需求必须由一辆车辆一次性满足，而在SDVRP中，允许将单个客户的需求拆分成多个部分，由不同的车辆分别配送。这一特性使得SDVRP在实际应用中具有更大的灵活性和成本节约潜力。
+
+### 问题特点：
+
+- 允许将单个客户的需求分配给多辆车
+- 每辆车有固定的容量限制
+- 每辆车从配送中心出发，完成配送任务后返回配送中心
+- 目标是最小化所有车辆的总行驶距离
+
+## 3. 数学模型
+
+### 3.1 符号定义
+
 - **集合**
-  - $V = \{0, 1, 2, ..., n\}$：所有节点集合，其中0表示配送中心，$C = \{1, 2, ..., n\}$表示客户点集合
-  - $K$：车辆集合
 
+  - $V = \{1, 2, ..., n\}$：所有节点集合，其中1表示配送中心，$C = \{2, 3, ..., n\}$表示客户点集合
+  - $K$：车辆集合
 - **参数**
+
   - $d_i$：客户点$i$的需求量
   - $Q$：车辆的最大载重容量
-  - $c_{ij}$：从节点$i$到节点$j$的运输成本（通常为距离）
-  - $L$：车辆的最大行驶里程
-
+  - $c_{ij}$：从节点$i$到节点$j$的运输距离
 - **决策变量**
+
   - $x_{ijk} \in \{0,1\}$：二进制变量，若车辆$k$从节点$i$直接前往节点$j$，则为1，否则为0
-  - $y_{ik} \geq 0$：车辆$k$在客户点$i$的配送量
+  - $U_{ik}$：车辆$k$在客户点$i$的卸货量
+  - $L_{ik}$：车辆$k$离开节点$i$时的载货量
+  - $A_{ik}$：车辆$k$到达节点$i$时的载货量
 
-#### 目标函数
-最小化总运输成本：
-$$\min \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk}$$
+### 3.2 目标函数
 
-#### 约束条件
-1. **需求满足约束**：每个客户点的需求必须被完全满足
-   $$\sum_{k \in K} y_{ik} = d_i, \quad \forall i \in C$$
+最小化总运输距离：
 
-2. **车辆容量约束**：每辆车的总配送量不能超过其载重容量
-   $$\sum_{i \in C} y_{ik} \leq Q, \quad \forall k \in K$$
+$$
+\min \sum_{k \in K} \sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk}
+$$
 
+### 3.3 约束条件
+
+1. **客户服务约束**：每个客户至少被一辆车服务一次，最多被2辆车服务
+
+   $$
+   \sum_{j \in V} \sum_{k \in K} x_{ijk} \geq 1, \quad \forall i \in C
+   $$
+
+   $$
+   \sum_{j \in V} \sum_{k \in K} x_{ijk} \leq 2, \quad \forall i \in C
+   $$
+2. **车辆访问约束**：同一辆车对同一客户点最多访问一次
+
+   $$
+   \sum_{j \in V} x_{ijk} \leq 1, \quad \forall i \in C, \forall k \in K
+   $$
 3. **流量守恒约束**：确保每辆车从配送中心出发并最终返回配送中心
-   $$\sum_{j \in V, j \neq i} x_{ijk} = \sum_{j \in V, j \neq i} x_{jik}, \quad \forall i \in V, \forall k \in K$$
 
-4. **子环消除约束**：防止出现不包含配送中心的子环
-   $$\sum_{i \in S} \sum_{j \in S, j \neq i} x_{ijk} \leq |S| - 1, \quad \forall S \subseteq C, \forall k \in K$$
+   $$
+   \sum_{i \in V} x_{ijk} = \sum_{i \in V} x_{jik}, \quad \forall j \in C, \forall k \in K
+   $$
+4. **车辆出发和返回约束**：每辆车从配送中心出发并返回
 
-5. **里程约束**：每辆车的总行驶距离不能超过最大里程限制
-   $$\sum_{i \in V} \sum_{j \in V} c_{ij} x_{ijk} \leq L, \quad \forall k \in K$$
+   $$
+   \sum_{j \in V} x_{1jk} \leq 1, \quad \forall k \in K
+   $$
 
-6. **配送量与路径关联约束**：只有在车辆访问客户点时才能进行配送
-   $$y_{ik} \leq Q \cdot \sum_{j \in V} x_{jik}, \quad \forall i \in C, \forall k \in K$$
+   $$
+   \sum_{j \in V} x_{j1k} \leq 1, \quad \forall k \in K
+   $$
+5. **卸货量约束**：车辆在客户点的卸货量非负且与路径相关
 
-## 算法框架
+   $$
+   U_{ik} \geq 0, \quad \forall i \in C, \forall k \in K
+   $$
 
-### 遗传算法设计
+   $$
+   U_{ik} \leq Q \cdot \sum_{j \in V} x_{ijk}, \quad \forall i \in C, \forall k \in K
+   $$
+6. **车辆容量约束**：每辆车的总卸货量不能超过其容量
 
-#### 编码方案
-采用基于TSP的编码方式：
-- 使用包含所有客户点的排列作为染色体
-- 通过特定解码算法将TSP路径转换为SDVRP解决方案
-- 使用"1"作为分隔符表示车辆路径的结束和新路径的开始
+   $$
+   \sum_{i \in C} U_{ik} \leq Q, \quad \forall k \in K
+   $$
+7. **需求满足约束**：每个客户的需求必须被完全满足
 
-#### 算法流程
-```mermaid
-graph TD
-    A[开始] --> B[初始化参数]
-    B --> C[初始化种群]
-    C --> D[计算适应度]
-    D --> E[选择操作]
-    E --> F[交叉操作]
-    F --> G[变异操作]
-    G --> H[逆转操作]
-    H --> I[TSP转SDVRP解码]
-    J[邻域搜索] --> K[剔除冗余]
-    K --> L[重插入操作]
-    L --> M{达到最大代数?}
-    M -->|否| D
-    M -->|是| N[输出最优解]
-    I --> J
-    
-    style A fill:#f9f,stroke:#333
-    style N fill:#9f9,stroke:#333
+   $$
+   \sum_{k \in K} U_{ik} = d_i, \quad \forall i \in C
+   $$
+8. **载货量约束**：车辆到达和离开节点时的载货量非负且与路径相关
+
+   $$
+   L_{ik} \geq 0, \quad \forall i \in V, \forall k \in K
+   $$
+
+   $$
+   L_{ik} \leq Q \cdot \sum_{j \in V} x_{ijk}, \quad \forall i \in V, \forall k \in K
+   $$
+
+   $$
+   A_{ik} \geq 0, \quad \forall i \in V, \forall k \in K
+   $$
+
+   $$
+   A_{ik} \leq Q \cdot \sum_{j \in V} x_{ijk}, \quad \forall i \in V, \forall k \in K
+   $$
+9. **载货量连续性约束**：运输弧上载货量不变
+
+   $$
+   -Q \cdot (1 - x_{ijk}) \leq L_{ik} - A_{jk} \leq Q \cdot (1 - x_{ijk}), \quad \forall i,j \in V, \forall k \in K
+   $$
+10. **货物守恒约束**：到达客户点后的载货量减去卸货量等于离开时的载货量
+
+    $$
+    A_{ik} - U_{ik} = L_{ik}, \quad \forall i \in C, \forall k \in K
+    $$
+
+## 4. YALMIP与GUROBI调用
+
+### 4.1 YALMIP简介
+
+YALMIP是一个用于MATLAB的建模语言，允许用户以高级语法描述优化问题，并自动调用适当的求解器来求解这些问题。
+
+### 4.2 关键代码解析
+
+1. **变量声明**：
+
+   ```matlab
+   Xijk = binvar(CityNum, CityNum, VehicleNum, 'full'); % 三维路径变量 x(i,j,k)
+   Mu = sdpvar(CustomerNum, VehicleNum); % MTZ辅助变量 u(i,k)
+   Uik = sdpvar(CityNum,VehicleNum); % 车辆k在节点i的卸货量
+   Lik = sdpvar(CityNum,VehicleNum); % 车辆k离开节点i时的载货量
+   Aik = sdpvar(CityNum,VehicleNum); % 车辆k到达节点i时的载货量
+   ```
+2. **目标函数构建**：
+
+   ```matlab
+   objective = 0;
+   for k = 1:VehicleNum
+       objective = objective + sum(sum(Distance .* Xijk(:,:,k)));
+   end
+   ```
+3. **约束条件添加**：
+
+   ```matlab
+   constraints = [];
+   % 添加各类约束...
+   ```
+4. **求解器设置与调用**：
+
+   ```matlab
+   ops = sdpsettings('verbose', 1, 'solver', 'gurobi');
+   ops.gurobi.TuneTimeLimit = 300;    % 设置5分钟调参时间
+   ops.gurobi.TimeLimit = 600;       % 求解时间限制
+   sol = optimize(constraints, objective, ops);
+   ```
+5. **结果提取与分析**：
+
+   ```matlab
+   if sol.problem ~= 0
+       % 提取解
+       x_val = value(Xijk);
+       u_val = value(Mu);
+       % 输出结果...
+   end
+   ```
+
+## 5. 求解参数设置
+
+### 5.1 主要参数说明
+
+| 参数名称      | 说明               | 默认值              | 调整建议                                   |
+| ------------- | ------------------ | ------------------- | ------------------------------------------ |
+| VehicleNum    | 车辆数量           | 8                   | 根据实际问题规模调整，过多会增加计算复杂度 |
+| TuneTimeLimit | GUROBI调参时间(秒) | 300 (5分钟)         | 对于复杂问题可适当增加                     |
+| TimeLimit     | 求解时间限制(秒)   | 600 (10分钟)        | 对于大规模问题可适当延长                   |
+| Capacity      | 车辆容量           | 从Capacity.mat加载  | 根据实际车辆情况设置                       |
+| Travelcon     | 行程约束           | 从Travelcon.mat加载 | 根据车辆续航里程设置                       |
+
+### 5.2 数据文件说明
+
+代码依赖以下数据文件：
+
+- `City.mat`：需求点经纬度，用于画实际路径的XY坐标
+- `Distance.mat`：距离矩阵
+- `Demand.mat`：客户需求量
+- `Capacity.mat`：车辆容量约束
+- `Travelcon.mat`：行程约束
+
+这些文件应放置在 `../test_data/`目录下。
+
+## 6. 使用方法
+
+1. 确保已安装MATLAB、YALMIP和GUROBI求解器
+2. 准备好所需的数据文件，并放置在正确的目录下
+3. 打开MATLAB，导航到代码所在目录
+4. 运行 `SDVRP_MTZ_gurobi.m`文件
+5. 查看求解结果，包括总距离和每辆车的路径
+
+## 7. 输出结果解释
+
+代码运行成功后，将输出以下结果：
+
+- 总距离：所有车辆行驶的总距离
+- 每辆车的路径：每辆车服务的客户点顺序和路线
+
+例如：
+
+```
+求解成功！
+总距离：125.67
+车辆1的路径：[1, 3, 5, 1]
+车辆2的路径：[1, 2, 4, 1]
+车辆3的路径：未使用
+...
 ```
 
-#### 遗传算子
-1. **选择算子**：基于适应度比例选择
-2. **交叉算子**：部分匹配交叉（PMX）
-3. **变异算子**：交换变异
-4. **逆转算子**：2-opt局部优化
+## 8. 注意事项
 
-#### 适应度函数
-$$fitness = \frac{1}{TotalCost + \alpha \cdot VehicleCost}$$
-其中：
-- $TotalCost$：所有车辆的总行驶距离
-- $VehicleCost$：车辆使用成本（固定成本）
-- $\alpha$：车辆成本权重系数
+1. 求解大规模问题时，可能需要较长时间，请耐心等待
+2. 若求解失败，代码会显示失败信息，可根据提示调整参数或检查数据
+3. 本代码假设每个客户最多由2辆车服务，如需调整，请修改约束条件1中的上界
+4. 使用GUROBI求解器需要有效的许可证
 
-### 局部优化
+## 9. 代码结构说明
 
-#### 邻域搜索
-- 2-opt交换
-- 路径间客户点重定位
-- 路径内客户点重排序
+| 函数/部分      | 说明                         |
+| -------------- | ---------------------------- |
+| 数据加载部分   | 加载问题所需的各类数据       |
+| 参数设置部分   | 定义问题规模、车辆数量等参数 |
+| 变量声明部分   | 使用YALMIP声明优化变量       |
+| 目标函数构建   | 最小化总行驶距离             |
+| 约束条件添加   | 添加所有问题约束             |
+| 求解器设置     | 设置GUROBI求解器参数         |
+| 求解与结果分析 | 调用求解器并处理结果         |
+| find_path函数  | 辅助函数，从解矩阵中提取路径 |
 
-#### 冗余处理
-- 自动识别并移除不必要的配送中心访问
-- 优化路径结构，减少总成本
-
-## 实验数据
-
-### 测试算例
-使用Solomon标准测试算例集，包含三种类型：
-
-| 类型 | 特征描述 | 文件名 |
-|------|----------|--------|
-| C类 | 聚类分布客户点 | C101-C109 |
-| R类 | 随机分布客户点 | R101-R112 |
-| RC类 | 混合分布客户点 | RC101-RC108 |
-
-### 数据格式
-每个测试文件包含以下信息：
-- 客户点编号
-- X坐标、Y坐标（位置信息）
-- 需求量
-- 时间窗（起始时间、结束时间）
-- 服务时间
-
-### 参数设置
-- **车辆参数**：
-  - 载重容量：12-200单位
-  - 最大行驶里程：90-600公里
-  - 车辆固定成本：100-800
-
-- **算法参数**：
-  - 种群大小：20-80
-  - 最大遗传代数：300-1000
-  - 交叉概率：0.9
-  - 变异概率：0.05-0.5
-  - 代沟概率：0.9
-
-### 运行示例
-```matlab
-% 基于Solomon算例运行
-instance = importdata('./instance/R/R101.txt');
-CustomerNum = 50;
-[City, Demand, Distance] = sdvrp_instance(instance, CustomerNum);
-
-% 运行遗传算法
-Main.m
-```
-
-### 结果输出
-算法输出包含：
-1. 最优路径方案
-2. 每辆车的具体配送路线
-3. 总运输成本
-4. 使用的车辆数量
-5. 算法运行时间
-6. 收敛曲线图
-7. 路径可视化图
-
-## 文件结构
-
-```
-GA_SDVRP/
-├── Main.m                    # 主程序入口
-├── GA_SDVRP.m               # 遗传算法主框架
-├── Fitness.m                # 适应度计算
-├── InitPop.m                # 种群初始化
-├── Select.m                 # 选择算子
-├── Crossover.m              # 交叉算子
-├── Mutate.m                 # 变异算子
-├── Reverse.m                # 逆转算子
-├── Reins.m                  # 重插入操作
-├── TSPtoChrom.m             # TSP到SDVRP转换
-├── localsearch.m            # 邻域搜索
-├── TextOutput.m             # 结果输出
-├── DrawPath.m               # 路径可视化
-├── sdvrp_instance.m         # 算例生成
-├── instance/                # 测试算例目录
-│   ├── C/                   # 聚类分布算例
-│   ├── R/                   # 随机分布算例
-│   └── RC/                  # 混合分布算例
-└── test_data/               # 内置测试数据
-```
-
-## 使用说明
-
-### 环境要求
-- MATLAB R2018b或更高版本
-- 无需额外工具箱
-
-### 运行步骤
-1. 设置工作目录到GA_SDVRP文件夹
-2. 修改Main.m中的参数设置
-3. 运行Main.m开始优化
-
-### 自定义算例
-可以通过修改以下参数来自定义问题：
-- 客户点数量和位置
-- 需求量分布
-- 车辆容量和里程限制
-- 算法参数设置
+## 10. 参考文献
