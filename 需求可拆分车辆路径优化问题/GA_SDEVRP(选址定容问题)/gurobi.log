@@ -1,0 +1,3176 @@
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:16:16 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:16:41 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:16:50 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:17:00 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:17:00 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:17:40 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:27:54 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:28:56 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:30:16 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:30:36 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:31:21 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:31:50 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:36:46 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:36:56 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1581 rows, 483 columns and 5736 nonzeros
+Model fingerprint: 0x5e09434a
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 540 rows and 72 columns
+Presolve time: 0.01s
+Presolved: 1041 rows, 411 columns, 4818 nonzeros
+Variable types: 108 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 5.947000e+01, 95 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+H    0     0                     255.3550000   59.47000  76.7%     -    0s
+H    0     0                     240.1250000   59.47000  75.2%     -    0s
+     0     0   59.50900    0   23  240.12500   59.50900  75.2%     -    0s
+     0     0   59.64771    0   29  240.12500   59.64771  75.2%     -    0s
+     0     0   60.91104    0   26  240.12500   60.91104  74.6%     -    0s
+     0     0   62.00961    0   31  240.12500   62.00961  74.2%     -    0s
+     0     0   62.00961    0   36  240.12500   62.00961  74.2%     -    0s
+     0     0   63.94585    0   22  240.12500   63.94585  73.4%     -    0s
+     0     0   63.98657    0   30  240.12500   63.98657  73.4%     -    0s
+     0     0   63.98657    0   32  240.12500   63.98657  73.4%     -    0s
+H    0     0                     237.8790000   63.98657  73.1%     -    0s
+     0     0   64.12074    0   29  237.87900   64.12074  73.0%     -    0s
+H    0     0                     230.4690000   64.12221  72.2%     -    0s
+     0     0   64.12258    0   36  230.46900   64.12258  72.2%     -    0s
+     0     0   64.17133    0   30  230.46900   64.17133  72.2%     -    0s
+     0     0   64.22171    0   34  230.46900   64.22171  72.1%     -    0s
+     0     0   64.22171    0   32  230.46900   64.22171  72.1%     -    0s
+     0     0   64.22171    0   34  230.46900   64.22171  72.1%     -    0s
+     0     0   64.22171    0   33  230.46900   64.22171  72.1%     -    0s
+H    0     0                     228.9710000   64.22171  72.0%     -    0s
+     0     0   64.22171    0   33  228.97100   64.22171  72.0%     -    0s
+     0     0   64.23978    0   32  228.97100   64.23978  71.9%     -    0s
+     0     0   64.25592    0   17  228.97100   64.25592  71.9%     -    0s
+H    0     0                     217.1200000   64.25592  70.4%     -    0s
+H    0     0                     212.6230000   64.25592  69.8%     -    0s
+     0     0   64.25592    0   20  212.62300   64.25592  69.8%     -    0s
+     0     0   64.25592    0   27  212.62300   64.25592  69.8%     -    0s
+     0     0   64.25592    0   28  212.62300   64.25592  69.8%     -    0s
+     0     0   64.25592    0   30  212.62300   64.25592  69.8%     -    0s
+     0     0   64.25592    0   30  212.62300   64.25592  69.8%     -    0s
+     0     0   64.25592    0   31  212.62300   64.25592  69.8%     -    0s
+     0     0   64.26146    0   31  212.62300   64.26146  69.8%     -    0s
+     0     0   64.26146    0   31  212.62300   64.26146  69.8%     -    0s
+     0     0   64.26146    0   38  212.62300   64.26146  69.8%     -    0s
+     0     0   64.26211    0   38  212.62300   64.26211  69.8%     -    0s
+     0     0   64.34048    0   41  212.62300   64.34048  69.7%     -    0s
+H    0     0                     211.1750000   64.34048  69.5%     -    0s
+     0     0   64.34226    0   29  211.17500   64.34226  69.5%     -    0s
+     0     0   64.34226    0   27  211.17500   64.34226  69.5%     -    0s
+     0     0   64.35392    0   33  211.17500   64.35392  69.5%     -    0s
+H    0     0                     196.9390000   64.35500  67.3%     -    0s
+     0     0   64.35500    0   37  196.93900   64.35500  67.3%     -    0s
+     0     0   64.40483    0   37  196.93900   64.40483  67.3%     -    0s
+     0     0   64.64181    0   32  196.93900   64.64181  67.2%     -    0s
+     0     0   65.04176    0   32  196.93900   65.04176  67.0%     -    0s
+     0     0   65.17723    0   37  196.93900   65.17723  66.9%     -    0s
+     0     0   65.21884    0   39  196.93900   65.21884  66.9%     -    0s
+     0     0   65.24769    0   40  196.93900   65.24769  66.9%     -    0s
+     0     0   65.63862    0   36  196.93900   65.63862  66.7%     -    0s
+     0     0   65.92217    0   36  196.93900   65.92217  66.5%     -    0s
+     0     0   66.28782    0   39  196.93900   66.28782  66.3%     -    0s
+     0     0   66.28782    0   37  196.93900   66.28782  66.3%     -    0s
+     0     2   66.51283    0   35  196.93900   66.51283  66.2%     -    0s
+H   26    72                     196.1690000   66.51283  66.1%  40.4    0s
+H 1153   953                     196.1260000   68.89163  64.9%  19.9    0s
+H 1356  1185                     196.0870000   70.71479  63.9%  20.0    0s
+H 1420  1184                     195.2530000   70.71479  63.8%  20.1    0s
+H 3178  2093                     194.1080000   71.92707  62.9%  20.3    0s
+H 6443  3328                     192.6140000   76.01379  60.5%  20.0    1s
+H 6592  3268                     192.1800000   76.01379  60.4%  19.9    1s
+H 8342  4489                     191.1700000   77.51149  59.5%  19.5    1s
+
+Cutting planes:
+  Learned: 8
+  Gomory: 15
+  Cover: 40
+  Implied bound: 118
+  MIR: 46
+  StrongCG: 1
+  Flow cover: 19
+  Inf proof: 26
+  RLT: 29
+  Relax-and-lift: 2
+  BQP: 1
+
+Explored 24797 nodes (485180 simplex iterations) in 2.95 seconds (4.40 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 191.17 192.18 192.614 ... 211.175
+
+Solve interrupted
+Best objective 1.911700000000e+02, best bound 8.355322485207e+01, gap 56.2938%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:38:22 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5737 nonzeros
+Model fingerprint: 0x0de6996c
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:40:07 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1582 rows, 483 columns and 5749 nonzeros
+Model fingerprint: 0x2b4dca75
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:44:34 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1566 rows, 483 columns and 5221 nonzeros
+Model fingerprint: 0x430fa217
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:44:42 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1558 rows, 483 columns and 5485 nonzeros
+Model fingerprint: 0xefb5277f
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:44:53 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1552 rows, 483 columns and 5149 nonzeros
+Model fingerprint: 0x66932129
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 78 rows and 66 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:45:03 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1576 rows, 483 columns and 5683 nonzeros
+Model fingerprint: 0x09a98af3
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:45:18 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1534 rows, 483 columns and 5437 nonzeros
+Model fingerprint: 0xe6dfdea9
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:45:29 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1528 rows, 483 columns and 5398 nonzeros
+Model fingerprint: 0x5d869596
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:45:38 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1528 rows, 483 columns and 5398 nonzeros
+Model fingerprint: 0xbe08a675
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:45:45 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 856 rows, 477 columns and 3571 nonzeros
+Model fingerprint: 0x41e5b2bc
+Variable types: 120 continuous, 357 integer (357 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 78 rows and 18 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:46:32 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1198 rows, 483 columns and 5029 nonzeros
+Model fingerprint: 0x38233868
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 48 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:46:42 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1390 rows, 477 columns and 5509 nonzeros
+Model fingerprint: 0x50694004
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+01]
+Presolve removed 390 rows and 30 columns
+Presolve time: 0.01s
+Presolved: 1000 rows, 447 columns, 5177 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 127 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   76.83780    0   30          -   76.83780      -     -    0s
+H    0     0                     421.3760000   76.94053  81.7%     -    0s
+H    0     0                     401.9770000   76.94053  80.9%     -    0s
+H    0     0                     348.0970000   76.94053  77.9%     -    0s
+     0     0   76.94053    0   30  348.09700   76.94053  77.9%     -    0s
+     0     0   77.14613    0   23  348.09700   77.14613  77.8%     -    0s
+     0     0   77.43531    0   25  348.09700   77.43531  77.8%     -    0s
+     0     0   77.43531    0   24  348.09700   77.43531  77.8%     -    0s
+     0     0   77.85539    0   28  348.09700   77.85539  77.6%     -    0s
+H    0     0                     304.4780000   77.85819  74.4%     -    0s
+     0     0   77.86927    0   30  304.47800   77.86927  74.4%     -    0s
+     0     0   77.86927    0   30  304.47800   77.86927  74.4%     -    0s
+     0     0   77.98530    0   30  304.47800   77.98530  74.4%     -    0s
+     0     0   77.99890    0   29  304.47800   77.99890  74.4%     -    0s
+     0     0   77.99890    0   29  304.47800   77.99890  74.4%     -    0s
+     0     0   77.99890    0   36  304.47800   77.99890  74.4%     -    0s
+     0     0   78.00001    0   31  304.47800   78.00001  74.4%     -    0s
+     0     0   78.00001    0   34  304.47800   78.00001  74.4%     -    0s
+H    0     0                     285.8150000   78.00001  72.7%     -    0s
+H    0     0                     263.4730000   78.00001  70.4%     -    0s
+H    0     0                     255.3470000   78.00001  69.5%     -    0s
+     0     0   78.00001    0   34  255.34700   78.00001  69.5%     -    0s
+     0     0   78.01722    0   33  255.34700   78.01722  69.4%     -    0s
+     0     0   78.02649    0   36  255.34700   78.02649  69.4%     -    0s
+     0     0   78.04435    0   25  255.34700   78.04435  69.4%     -    0s
+     0     0   78.04435    0   30  255.34700   78.04435  69.4%     -    0s
+     0     0   78.04585    0   26  255.34700   78.04585  69.4%     -    0s
+     0     0   78.04585    0   31  255.34700   78.04585  69.4%     -    0s
+     0     0   78.04585    0   31  255.34700   78.04585  69.4%     -    0s
+     0     2   78.05816    0   28  255.34700   78.05816  69.4%     -    0s
+H   31    62                     240.3390000   80.11682  66.7%  36.3    0s
+H  213   241                     234.8330000   80.11682  65.9%  19.6    0s
+H 1276  1232                     232.7090000   82.68527  64.5%  16.3    0s
+H 1908  1592                     230.4530000   83.83907  63.6%  15.9    0s
+H 2152  1668                     229.7230000   83.83907  63.5%  16.0    0s
+H 3285  2247                     217.0000000   84.55560  61.0%  15.9    0s
+H33945 22566                     214.2540000   94.30967  56.0%  13.2    4s
+ 41804 25741   99.03038   38   27  214.25400   94.30967  56.0%  13.7    5s
+H47557 26715                     212.8040000   94.30967  55.7%  14.2    5s
+H49134 26868                     212.7610000   94.30967  55.7%  14.3    5s
+
+Cutting planes:
+  Gomory: 24
+  Implied bound: 12
+  MIR: 4
+  Flow cover: 19
+  Zero half: 1
+  RLT: 15
+
+Explored 74042 nodes (1133676 simplex iterations) in 7.29 seconds (11.74 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 212.761 212.804 214.254 ... 255.347
+
+Solve interrupted
+Best objective 2.127610000000e+02, best bound 9.584062440476e+01, gap 54.9539%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:46:59 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1486 rows, 483 columns and 5605 nonzeros
+Model fingerprint: 0xea8cd986
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+01]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:47:08 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1486 rows, 477 columns and 5653 nonzeros
+Model fingerprint: 0xaa893227
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 439 rows and 30 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 128 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   76.57673    0   28          -   76.57673      -     -    0s
+     0     0   77.00981    0   23          -   77.00981      -     -    0s
+     0     0   77.51314    0   32          -   77.51314      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.61255    0   35          -   77.61255      -     -    0s
+     0     0   77.61255    0   38          -   77.61255      -     -    0s
+     0     0   77.61255    0   38          -   77.61255      -     -    0s
+H    0     0                     365.9300000   77.61255  78.8%     -    0s
+     0     0   77.81320    0   36  365.93000   77.81320  78.7%     -    0s
+     0     0   77.84934    0   36  365.93000   77.84934  78.7%     -    0s
+     0     0   77.84934    0   36  365.93000   77.84934  78.7%     -    0s
+H    0     0                     358.2280000   77.84934  78.3%     -    0s
+     0     0   77.85569    0   39  358.22800   77.85569  78.3%     -    0s
+     0     0   77.85946    0   40  358.22800   77.85946  78.3%     -    0s
+     0     0   77.86097    0   41  358.22800   77.86097  78.3%     -    0s
+     0     0   77.86144    0   44  358.22800   77.86144  78.3%     -    0s
+H    0     0                     329.1350000   77.86144  76.3%     -    0s
+     0     0   77.87438    0   45  329.13500   77.87438  76.3%     -    0s
+H    0     0                     321.4950000   77.88053  75.8%     -    0s
+H    0     0                     288.2180000   77.88053  73.0%     -    0s
+H    0     0                     277.3280000   77.88053  71.9%     -    0s
+     0     0   77.88228    0   45  277.32800   77.88228  71.9%     -    0s
+     0     0   77.88662    0   43  277.32800   77.88662  71.9%     -    0s
+     0     0   77.88914    0   44  277.32800   77.88914  71.9%     -    0s
+     0     0   77.88914    0   44  277.32800   77.88914  71.9%     -    0s
+     0     0   77.89527    0   45  277.32800   77.89527  71.9%     -    0s
+H    0     0                     277.2590000   77.89722  71.9%     -    0s
+     0     0   77.89722    0   43  277.25900   77.89722  71.9%     -    0s
+     0     0   78.02705    0   43  277.25900   78.02705  71.9%     -    0s
+H    0     0                     260.0360000   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   45  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   42  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   43  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   43  260.03600   78.02705  70.0%     -    0s
+H    0     0                     231.8270000   78.17154  66.3%     -    0s
+     0     2   78.17154    0   43  231.82700   78.17154  66.3%     -    0s
+H   27    71                     223.4380000   80.05500  64.2%  33.6    0s
+H  154   169                     219.4280000   80.05500  63.5%  22.9    0s
+H  164   169                     217.5630000   80.05500  63.2%  22.5    0s
+H  713   718                     212.8530000   80.05500  62.4%  19.1    0s
+H 2899  2214                     212.8140000   83.92416  60.6%  16.3    0s
+ 45194 30025  151.77623   68   12  212.81400   93.61630  56.0%  13.2    5s
+
+Cutting planes:
+  Gomory: 16
+  Implied bound: 37
+  MIR: 6
+  Flow cover: 21
+  RLT: 13
+
+Explored 108222 nodes (1543655 simplex iterations) in 9.28 seconds (16.50 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 212.814 212.853 217.563 ... 288.218
+
+Solve interrupted
+Best objective 2.128140000000e+02, best bound 9.670548245614e+01, gap 54.5587%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:47:30 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1576 rows, 483 columns and 5743 nonzeros
+Model fingerprint: 0x71caadd2
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 72 rows and 12 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:47:44 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1486 rows, 477 columns and 5653 nonzeros
+Model fingerprint: 0xaa893227
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 439 rows and 30 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 128 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   76.57673    0   28          -   76.57673      -     -    0s
+     0     0   77.00981    0   23          -   77.00981      -     -    0s
+     0     0   77.51314    0   32          -   77.51314      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.61255    0   35          -   77.61255      -     -    0s
+     0     0   77.61255    0   38          -   77.61255      -     -    0s
+     0     0   77.61255    0   38          -   77.61255      -     -    0s
+H    0     0                     365.9300000   77.61255  78.8%     -    0s
+     0     0   77.81320    0   36  365.93000   77.81320  78.7%     -    0s
+     0     0   77.84934    0   36  365.93000   77.84934  78.7%     -    0s
+     0     0   77.84934    0   36  365.93000   77.84934  78.7%     -    0s
+H    0     0                     358.2280000   77.84934  78.3%     -    0s
+     0     0   77.85569    0   39  358.22800   77.85569  78.3%     -    0s
+     0     0   77.85946    0   40  358.22800   77.85946  78.3%     -    0s
+     0     0   77.86097    0   41  358.22800   77.86097  78.3%     -    0s
+     0     0   77.86144    0   44  358.22800   77.86144  78.3%     -    0s
+H    0     0                     329.1350000   77.86144  76.3%     -    0s
+     0     0   77.87438    0   45  329.13500   77.87438  76.3%     -    0s
+H    0     0                     321.4950000   77.88053  75.8%     -    0s
+H    0     0                     288.2180000   77.88053  73.0%     -    0s
+H    0     0                     277.3280000   77.88053  71.9%     -    0s
+     0     0   77.88228    0   45  277.32800   77.88228  71.9%     -    0s
+     0     0   77.88662    0   43  277.32800   77.88662  71.9%     -    0s
+     0     0   77.88914    0   44  277.32800   77.88914  71.9%     -    0s
+     0     0   77.88914    0   44  277.32800   77.88914  71.9%     -    0s
+     0     0   77.89527    0   45  277.32800   77.89527  71.9%     -    0s
+H    0     0                     277.2590000   77.89722  71.9%     -    0s
+     0     0   77.89722    0   43  277.25900   77.89722  71.9%     -    0s
+     0     0   78.02705    0   43  277.25900   78.02705  71.9%     -    0s
+H    0     0                     260.0360000   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   45  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   42  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   43  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   43  260.03600   78.02705  70.0%     -    0s
+H    0     0                     231.8270000   78.17154  66.3%     -    0s
+     0     2   78.17154    0   43  231.82700   78.17154  66.3%     -    0s
+H   27    71                     223.4380000   80.05500  64.2%  33.6    0s
+H  154   169                     219.4280000   80.05500  63.5%  22.9    0s
+H  164   169                     217.5630000   80.05500  63.2%  22.5    0s
+H  713   718                     212.8530000   80.05500  62.4%  19.1    0s
+H 2899  2214                     212.8140000   83.92416  60.6%  16.3    0s
+
+Explored 23724 nodes (282447 simplex iterations) in 2.03 seconds (3.08 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 212.814 212.853 217.563 ... 288.218
+
+Solve interrupted
+Best objective 2.128140000000e+02, best bound 9.251881896552e+01, gap 56.5260%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:48:10 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1486 rows, 477 columns and 5653 nonzeros
+Model fingerprint: 0xaa893227
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 439 rows and 30 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 128 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   76.57673    0   28          -   76.57673      -     -    0s
+     0     0   77.00981    0   23          -   77.00981      -     -    0s
+     0     0   77.51314    0   32          -   77.51314      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.55246    0   33          -   77.55246      -     -    0s
+     0     0   77.61255    0   35          -   77.61255      -     -    0s
+     0     0   77.61255    0   38          -   77.61255      -     -    0s
+     0     0   77.61255    0   38          -   77.61255      -     -    0s
+H    0     0                     365.9300000   77.61255  78.8%     -    0s
+     0     0   77.81320    0   36  365.93000   77.81320  78.7%     -    0s
+     0     0   77.84934    0   36  365.93000   77.84934  78.7%     -    0s
+     0     0   77.84934    0   36  365.93000   77.84934  78.7%     -    0s
+H    0     0                     358.2280000   77.84934  78.3%     -    0s
+     0     0   77.85569    0   39  358.22800   77.85569  78.3%     -    0s
+     0     0   77.85946    0   40  358.22800   77.85946  78.3%     -    0s
+     0     0   77.86097    0   41  358.22800   77.86097  78.3%     -    0s
+     0     0   77.86144    0   44  358.22800   77.86144  78.3%     -    0s
+H    0     0                     329.1350000   77.86144  76.3%     -    0s
+     0     0   77.87438    0   45  329.13500   77.87438  76.3%     -    0s
+H    0     0                     321.4950000   77.88053  75.8%     -    0s
+H    0     0                     288.2180000   77.88053  73.0%     -    0s
+H    0     0                     277.3280000   77.88053  71.9%     -    0s
+     0     0   77.88228    0   45  277.32800   77.88228  71.9%     -    0s
+     0     0   77.88662    0   43  277.32800   77.88662  71.9%     -    0s
+     0     0   77.88914    0   44  277.32800   77.88914  71.9%     -    0s
+     0     0   77.88914    0   44  277.32800   77.88914  71.9%     -    0s
+     0     0   77.89527    0   45  277.32800   77.89527  71.9%     -    0s
+H    0     0                     277.2590000   77.89722  71.9%     -    0s
+     0     0   77.89722    0   43  277.25900   77.89722  71.9%     -    0s
+     0     0   78.02705    0   43  277.25900   78.02705  71.9%     -    0s
+H    0     0                     260.0360000   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   45  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   42  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   41  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   43  260.03600   78.02705  70.0%     -    0s
+     0     0   78.02705    0   43  260.03600   78.02705  70.0%     -    0s
+H    0     0                     231.8270000   78.17154  66.3%     -    0s
+     0     2   78.17154    0   43  231.82700   78.17154  66.3%     -    0s
+H   27    71                     223.4380000   80.05500  64.2%  33.6    0s
+H  154   169                     219.4280000   80.05500  63.5%  22.9    0s
+H  164   169                     217.5630000   80.05500  63.2%  22.5    0s
+H  713   718                     212.8530000   80.05500  62.4%  19.1    0s
+H 2899  2214                     212.8140000   83.92416  60.6%  16.3    0s
+ 41902 28512   99.85833   49   18  212.81400   93.61630  56.0%  13.0    5s
+ 108519 56901  141.61076   51   15  212.81400   96.70548  54.6%  14.3   10s
+H153635 88286                     210.0540000   98.96590  52.9%  14.5   13s
+H154323 88399                     209.4550000   98.99350  52.7%  14.5   13s
+ 174386 102677  182.34984   93    9  209.45500   99.69040  52.4%  14.6   15s
+H235244 146043                     209.0210000  101.24488  51.6%  14.6   19s
+H236826 144625                     204.9140000  101.27169  50.6%  14.6   19s
+ 242738 149178  154.53476   55   13  204.91400  101.42782  50.5%  14.6   20s
+H274819 170537                     204.3150000  102.21068  50.0%  14.6   22s
+ 308491 194158  151.16528   41   10  204.31500  102.90455  49.6%  14.7   25s
+ 373842 238932  132.56650   48   18  204.31500  104.03800  49.1%  14.8   30s
+ 438962 283802  134.45633   49   10  204.31500  105.03142  48.6%  14.8   35s
+ 498031 323244  193.73251   81   15  204.31500  105.80243  48.2%  14.9   40s
+
+Cutting planes:
+  Gomory: 16
+  Implied bound: 37
+  MIR: 6
+  Flow cover: 21
+  RLT: 13
+
+Explored 540863 nodes (8078693 simplex iterations) in 43.66 seconds (75.11 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 204.315 204.914 209.021 ... 223.438
+
+Solve interrupted
+Best objective 2.043150000000e+02, best bound 1.063436202530e+02, gap 47.9511%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:49:04 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1485 rows, 477 columns and 5652 nonzeros
+Model fingerprint: 0xfb9b735f
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 408 rows and 18 columns
+Presolve time: 0.01s
+Presolved: 1077 rows, 459 columns, 5040 nonzeros
+Variable types: 108 continuous, 351 integer (351 binary)
+
+Root relaxation: objective 5.947000e+01, 111 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+     0     0   59.47000    0   34          -   59.47000      -     -    0s
+     0     0   59.64771    0   28          -   59.64771      -     -    0s
+     0     0   61.90067    0   27          -   61.90067      -     -    0s
+     0     0   62.29525    0   23          -   62.29525      -     -    0s
+     0     0   63.94585    0   24          -   63.94585      -     -    0s
+     0     0   63.98657    0   27          -   63.98657      -     -    0s
+     0     0   63.98657    0   29          -   63.98657      -     -    0s
+H    0     0                     451.6920000   63.98657  85.8%     -    0s
+     0     0   64.17133    0   22  451.69200   64.17133  85.8%     -    0s
+H    0     0                     278.2540000   64.20412  76.9%     -    0s
+     0     0   64.20412    0   25  278.25400   64.20412  76.9%     -    0s
+     0     0   64.20412    0   25  278.25400   64.20412  76.9%     -    0s
+     0     0   64.24400    0   26  278.25400   64.24400  76.9%     -    0s
+     0     0   64.24400    0   24  278.25400   64.24400  76.9%     -    0s
+     0     0   64.24400    0   22  278.25400   64.24400  76.9%     -    0s
+     0     2   64.26314    0   22  278.25400   64.26314  76.9%     -    0s
+H   27    75                     246.2450000   65.40834  73.4%  30.8    0s
+H  125   172                     243.8470000   65.40834  73.2%  21.0    0s
+H  125   172                     238.8310000   65.40834  72.6%  21.0    0s
+H  160   172                     238.4860000   65.40834  72.6%  20.9    0s
+H  335   360                     236.4330000   65.40834  72.3%  19.0    0s
+H  540   618                     234.9850000   65.40834  72.2%  17.7    0s
+H  560   618                     234.0040000   65.40834  72.0%  17.6    0s
+H  583   618                     233.5340000   65.40834  72.0%  17.4    0s
+H  592   618                     228.4330000   65.40834  71.4%  17.3    0s
+H  648   650                     219.2360000   65.40834  70.2%  17.0    0s
+H  663   650                     218.9310000   65.40834  70.1%  16.8    0s
+H 1731  1492                     218.8970000   68.12531  68.9%  15.0    0s
+H 1735  1420                     218.3320000   68.12531  68.8%  15.0    0s
+H 2175  1648                     216.1050000   68.52824  68.3%  17.6    0s
+H 3220  2142                     212.9120000   68.52824  67.8%  18.3    0s
+H 3222  2074                     211.6140000   68.52824  67.6%  18.3    0s
+H 3261  2006                     209.2160000   69.53922  66.8%  18.4    0s
+H 5430  3150                     208.7950000   71.65028  65.7%  17.5    1s
+H17404 12509                     205.3920000   77.46797  62.3%  16.3    2s
+H18596 13348                     204.6220000   77.95145  61.9%  16.2    2s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 16
+  Cover: 11
+  Implied bound: 28
+  MIR: 48
+  Flow cover: 60
+  Inf proof: 12
+  RLT: 40
+  Relax-and-lift: 7
+  BQP: 5
+
+Explored 18856 nodes (306013 simplex iterations) in 2.35 seconds (3.53 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 204.622 205.392 208.795 ... 218.931
+
+Solve interrupted
+Best objective 2.046220000000e+02, best bound 7.795145446429e+01, gap 61.9047%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:49:11 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1485 rows, 477 columns and 5652 nonzeros
+Model fingerprint: 0xfb9b735f
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 408 rows and 18 columns
+Presolve time: 0.01s
+Presolved: 1077 rows, 459 columns, 5040 nonzeros
+Variable types: 108 continuous, 351 integer (351 binary)
+
+Root relaxation: objective 5.947000e+01, 111 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+     0     0   59.47000    0   34          -   59.47000      -     -    0s
+     0     0   59.64771    0   28          -   59.64771      -     -    0s
+     0     0   61.90067    0   27          -   61.90067      -     -    0s
+     0     0   62.29525    0   23          -   62.29525      -     -    0s
+     0     0   63.94585    0   24          -   63.94585      -     -    0s
+     0     0   63.98657    0   27          -   63.98657      -     -    0s
+     0     0   63.98657    0   29          -   63.98657      -     -    0s
+H    0     0                     451.6920000   63.98657  85.8%     -    0s
+     0     0   64.17133    0   22  451.69200   64.17133  85.8%     -    0s
+H    0     0                     278.2540000   64.20412  76.9%     -    0s
+     0     0   64.20412    0   25  278.25400   64.20412  76.9%     -    0s
+     0     0   64.20412    0   25  278.25400   64.20412  76.9%     -    0s
+     0     0   64.24400    0   26  278.25400   64.24400  76.9%     -    0s
+     0     0   64.24400    0   24  278.25400   64.24400  76.9%     -    0s
+     0     0   64.24400    0   22  278.25400   64.24400  76.9%     -    0s
+     0     2   64.26314    0   22  278.25400   64.26314  76.9%     -    0s
+H   27    75                     246.2450000   65.40834  73.4%  30.8    0s
+H  125   172                     243.8470000   65.40834  73.2%  21.0    0s
+H  125   172                     238.8310000   65.40834  72.6%  21.0    0s
+H  160   172                     238.4860000   65.40834  72.6%  20.9    0s
+H  335   360                     236.4330000   65.40834  72.3%  19.0    0s
+H  540   618                     234.9850000   65.40834  72.2%  17.7    0s
+H  560   618                     234.0040000   65.40834  72.0%  17.6    0s
+H  583   618                     233.5340000   65.40834  72.0%  17.4    0s
+H  592   618                     228.4330000   65.40834  71.4%  17.3    0s
+H  648   650                     219.2360000   65.40834  70.2%  17.0    0s
+H  663   650                     218.9310000   65.40834  70.1%  16.8    0s
+H 1731  1492                     218.8970000   68.12531  68.9%  15.0    0s
+H 1735  1420                     218.3320000   68.12531  68.8%  15.0    0s
+H 2175  1648                     216.1050000   68.52824  68.3%  17.6    0s
+H 3220  2142                     212.9120000   68.52824  67.8%  18.3    1s
+H 3222  2074                     211.6140000   68.52824  67.6%  18.3    1s
+H 3261  2006                     209.2160000   69.53922  66.8%  18.4    1s
+H 5430  3150                     208.7950000   71.65028  65.7%  17.5    1s
+H17404 12509                     205.3920000   77.46797  62.3%  16.3    2s
+H18791 14031                     204.6220000   77.95910  61.9%  16.2    2s
+ 32997 23729  105.70481   40   33  204.62200   79.93753  60.9%  15.7    5s
+H33137 22638                     203.8380000   79.93753  60.8%  15.8    6s
+ 63228 36563  117.82906   59   40  203.83800   82.43425  59.6%  17.1   10s
+ 123781 68196  159.08172   76   24  203.83800   86.66434  57.5%  17.8   15s
+*126213 69590              81     202.5990000   86.78556  57.2%  17.8   15s
+H127267 70154                     201.1050000   86.82497  56.8%  17.9   15s
+H157584 91895                     199.3600000   87.92085  55.9%  18.2   18s
+*176422 105153             141     196.7230000   88.51934  55.0%  18.2   19s
+ 177419 105729   92.80294   47   23  196.72300   88.55539  55.0%  18.2   20s
+H211374 127718                     192.7130000   89.49467  53.6%  18.4   23s
+ 220241 134208  112.25228   46   29  192.71300   89.70739  53.5%  18.3   25s
+ 264941 165247  102.67280   55   23  192.71300   90.74764  52.9%  18.6   30s
+H294366 184572                     192.0130000   91.27373  52.5%  18.6   33s
+H294543 184696                     191.1090000   91.27373  52.2%  18.6   33s
+H294942 184357                     190.5100000   91.28563  52.1%  18.6   33s
+ 309451 194644  118.40146   56   25  190.51000   91.53775  52.0%  18.7   35s
+ 356842 226694 infeasible   90       190.51000   92.22700  51.6%  18.8   40s
+
+Cutting planes:
+  Learned: 7
+  Gomory: 41
+  Cover: 134
+  Implied bound: 91
+  MIR: 126
+  StrongCG: 4
+  Flow cover: 443
+  GUB cover: 8
+  Inf proof: 61
+  Zero half: 23
+  RLT: 56
+  Relax-and-lift: 25
+  BQP: 14
+
+Explored 392822 nodes (7413929 simplex iterations) in 43.75 seconds (74.46 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 190.51 191.109 192.013 ... 204.622
+
+Solve interrupted
+Best objective 1.905100000000e+02, best bound 9.267477694064e+01, gap 51.3544%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:50:40 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1485 rows, 477 columns and 5652 nonzeros
+Model fingerprint: 0x0c8380c2
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+Presolve removed 408 rows and 18 columns
+Presolve time: 0.01s
+Presolved: 1077 rows, 459 columns, 5040 nonzeros
+Variable types: 108 continuous, 351 integer (351 binary)
+
+Root relaxation: objective 5.947000e+01, 138 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+H    0     0                     385.2170000   59.47000  84.6%     -    0s
+     0     0   59.47000    0   25  385.21700   59.47000  84.6%     -    0s
+H    0     0                     290.2210000   59.47000  79.5%     -    0s
+     0     0   59.70802    0   30  290.22100   59.70802  79.4%     -    0s
+     0     0   61.71132    0   26  290.22100   61.71132  78.7%     -    0s
+     0     0   62.08050    0   26  290.22100   62.08050  78.6%     -    0s
+     0     0   62.08050    0   26  290.22100   62.08050  78.6%     -    0s
+     0     0   64.14180    0   26  290.22100   64.14180  77.9%     -    0s
+     0     0   64.19496    0   30  290.22100   64.19496  77.9%     -    0s
+     0     0   64.19496    0   34  290.22100   64.19496  77.9%     -    0s
+     0     0   64.20325    0   34  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   34  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   34  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   25  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   27  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   27  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   24  290.22100   64.20325  77.9%     -    0s
+     0     2   64.26574    0   23  290.22100   64.26574  77.9%     -    0s
+H   36    75                     286.5550000   65.97928  77.0%  36.3    0s
+H  125   172                     284.4000000   65.97928  76.8%  23.2    0s
+H  128   172                     272.0500000   65.97928  75.7%  23.3    0s
+H  223   268                     232.8520000   65.97928  71.7%  20.8    0s
+H  263   268                     227.8780000   65.97928  71.0%  20.1    0s
+H 1028   960                     224.7770000   67.02003  70.2%  15.8    0s
+H 1029   948                     212.8420000   67.02003  68.5%  15.8    0s
+H 1456  1348                     209.8670000   68.36588  67.4%  15.2    0s
+H 1466  1347                     209.4980000   68.36588  67.4%  15.2    0s
+H 2000  1634                     207.0880000   68.36588  67.0%  14.5    0s
+H 2019  1565                     206.9110000   70.01349  66.2%  14.3    0s
+H 2360  1717                     205.7400000   70.35856  65.8%  17.0    1s
+H 3508  2259                     204.9700000   70.90228  65.4%  19.0    1s
+*11393  7584              94     200.7410000   77.22704  61.5%  16.0    1s
+H21299 14759                     192.1410000   79.48023  58.6%  15.8    2s
+ 32835 22876   90.71317   30   59  192.14100   81.30349  57.7%  15.8    5s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 8
+  Implied bound: 10
+  MIR: 15
+  Mixing: 1
+  StrongCG: 1
+  Flow cover: 61
+  GUB cover: 4
+  Zero half: 5
+  RLT: 23
+  Relax-and-lift: 2
+
+Explored 32857 nodes (522972 simplex iterations) in 5.92 seconds (8.81 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 192.141 200.741 204.97 ... 224.777
+
+Solve interrupted
+Best objective 1.921410000000e+02, best bound 8.130349361314e+01, gap 57.6855%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:50:50 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1485 rows, 477 columns and 5652 nonzeros
+Model fingerprint: 0x0c8380c2
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+Presolve removed 408 rows and 18 columns
+Presolve time: 0.01s
+Presolved: 1077 rows, 459 columns, 5040 nonzeros
+Variable types: 108 continuous, 351 integer (351 binary)
+
+Root relaxation: objective 5.947000e+01, 138 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+H    0     0                     385.2170000   59.47000  84.6%     -    0s
+     0     0   59.47000    0   25  385.21700   59.47000  84.6%     -    0s
+H    0     0                     290.2210000   59.47000  79.5%     -    0s
+     0     0   59.70802    0   30  290.22100   59.70802  79.4%     -    0s
+     0     0   61.71132    0   26  290.22100   61.71132  78.7%     -    0s
+     0     0   62.08050    0   26  290.22100   62.08050  78.6%     -    0s
+     0     0   62.08050    0   26  290.22100   62.08050  78.6%     -    0s
+     0     0   64.14180    0   26  290.22100   64.14180  77.9%     -    0s
+     0     0   64.19496    0   30  290.22100   64.19496  77.9%     -    0s
+     0     0   64.19496    0   34  290.22100   64.19496  77.9%     -    0s
+     0     0   64.20325    0   34  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   34  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   34  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   25  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   27  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   27  290.22100   64.20325  77.9%     -    0s
+     0     0   64.20325    0   24  290.22100   64.20325  77.9%     -    0s
+     0     2   64.26574    0   23  290.22100   64.26574  77.9%     -    0s
+H   36    75                     286.5550000   65.97928  77.0%  36.3    0s
+H  125   172                     284.4000000   65.97928  76.8%  23.2    0s
+H  128   172                     272.0500000   65.97928  75.7%  23.3    0s
+H  223   268                     232.8520000   65.97928  71.7%  20.8    0s
+H  263   268                     227.8780000   65.97928  71.0%  20.1    0s
+H 1028   960                     224.7770000   67.02003  70.2%  15.8    0s
+H 1029   948                     212.8420000   67.02003  68.5%  15.8    0s
+H 1456  1348                     209.8670000   68.36588  67.4%  15.2    0s
+H 1466  1347                     209.4980000   68.36588  67.4%  15.2    0s
+H 2000  1634                     207.0880000   68.36588  67.0%  14.5    0s
+H 2019  1565                     206.9110000   70.01349  66.2%  14.3    0s
+H 2360  1717                     205.7400000   70.35856  65.8%  17.0    1s
+H 3508  2259                     204.9700000   70.90228  65.4%  19.0    1s
+*11393  7584              94     200.7410000   77.22704  61.5%  16.0    1s
+H21299 14759                     192.1410000   79.48023  58.6%  15.8    2s
+ 32838 22878  120.23346   77   62  192.14100   81.30349  57.7%  15.8    5s
+H32921 21784                     192.1090000   81.30349  57.7%  15.8    9s
+H32921 20693                     191.3710000   81.30349  57.5%  15.8    9s
+H32921 19657                     191.3390000   81.30349  57.5%  15.8    9s
+ 32931 19664   92.97528   53   85  191.33900   81.31264  57.5%  15.8   10s
+ 60979 32147  119.10490   48   25  191.33900   86.62181  54.7%  19.1   15s
+ 107538 54833  102.63031   62   24  191.33900   89.91123  53.0%  20.0   20s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 13
+  Cover: 83
+  Implied bound: 59
+  MIR: 135
+  Mixing: 1
+  StrongCG: 1
+  Flow cover: 589
+  GUB cover: 13
+  Inf proof: 42
+  Zero half: 12
+  Network: 1
+  RLT: 53
+  Relax-and-lift: 19
+  BQP: 13
+
+Explored 117712 nodes (2375402 simplex iterations) in 21.13 seconds (34.19 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 191.339 191.371 192.109 ... 209.498
+
+Solve interrupted
+Best objective 1.913390000000e+02, best bound 9.045195264596e+01, gap 52.7269%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:51:17 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 998 rows, 318 columns and 3768 nonzeros
+Model fingerprint: 0x78f708aa
+Variable types: 76 continuous, 242 integer (242 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+Presolve removed 256 rows and 20 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0       982         -         0         0         0           0s
+Numerical troubles encountered during IIS computation
+       10        10        10         0         0         0           0s
+
+IIS computed: 10 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:51:34 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 998 rows, 318 columns and 3768 nonzeros
+Model fingerprint: 0xbb1fa4dc
+Variable types: 76 continuous, 242 integer (242 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 256 rows and 20 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0       982         -         0         0         0           0s
+Numerical troubles encountered during IIS computation
+       10        10        10         0         0         0           0s
+
+IIS computed: 10 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:51:45 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1485 rows, 477 columns and 5652 nonzeros
+Model fingerprint: 0x5be9a94b
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 408 rows and 18 columns
+Presolve time: 0.01s
+Presolved: 1077 rows, 459 columns, 5040 nonzeros
+Variable types: 108 continuous, 351 integer (351 binary)
+
+Root relaxation: objective 5.947000e+01, 123 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+     0     0   59.47000    0   24          -   59.47000      -     -    0s
+     0     0   59.64771    0   27          -   59.64771      -     -    0s
+     0     0   61.11810    0   28          -   61.11810      -     -    0s
+     0     0   61.90493    0   28          -   61.90493      -     -    0s
+H    0     0                     374.3430000   61.90493  83.5%     -    0s
+     0     0   63.94585    0   18  374.34300   63.94585  82.9%     -    0s
+     0     0   63.98657    0   29  374.34300   63.98657  82.9%     -    0s
+     0     0   63.98657    0   29  374.34300   63.98657  82.9%     -    0s
+     0     0   64.17133    0   30  374.34300   64.17133  82.9%     -    0s
+H    0     0                     369.2560000   64.23508  82.6%     -    0s
+     0     0   64.23508    0   29  369.25600   64.23508  82.6%     -    0s
+     0     0   64.23508    0   29  369.25600   64.23508  82.6%     -    0s
+H    0     0                     355.6590000   64.23508  81.9%     -    0s
+     0     0   64.23508    0   30  355.65900   64.23508  81.9%     -    0s
+H    0     0                     336.2850000   64.23508  80.9%     -    0s
+H    0     0                     311.9610000   64.23508  79.4%     -    0s
+H    0     0                     287.4120000   64.23508  77.7%     -    0s
+     0     0   64.23508    0   30  287.41200   64.23508  77.7%     -    0s
+     0     0   64.23508    0   22  287.41200   64.23508  77.7%     -    0s
+     0     2   64.23900    0   22  287.41200   64.23900  77.6%     -    0s
+H   41    76                     280.5380000   65.52738  76.6%  31.9    0s
+H   51    76                     279.1880000   65.52738  76.5%  28.7    0s
+H  125   175                     255.2650000   65.52738  74.3%  23.0    0s
+H  239   273                     253.4750000   65.52738  74.1%  21.6    0s
+H  259   273                     248.3910000   65.52738  73.6%  20.9    0s
+H  350   364                     237.7980000   65.52738  72.4%  19.1    0s
+H  367   434                     221.7690000   65.52738  70.5%  19.1    0s
+H  375   434                     219.7920000   65.52738  70.2%  19.0    0s
+H 1552  1537                     214.6030000   68.44578  68.1%  16.2    0s
+H 1909  1708                     211.8370000   68.86120  67.5%  16.0    0s
+H 1913  1625                     211.2390000   68.86120  67.4%  16.0    0s
+H 1916  1545                     209.7840000   68.86120  67.2%  16.0    0s
+H 1927  1474                     204.6950000   68.86120  66.4%  15.9    0s
+H 1933  1404                     192.6140000   69.03951  64.2%  15.8    0s
+H 1978  1369                     191.1700000   69.34573  63.7%  16.9    0s
+H 2061  1379                     190.5740000   69.34573  63.6%  18.0    0s
+ 33011 22583  178.31610  116   22  190.57400   83.87757  56.0%  20.1    5s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 7
+  Implied bound: 7
+  MIR: 36
+  Flow cover: 79
+  GUB cover: 3
+  Zero half: 8
+  RLT: 21
+  Relax-and-lift: 5
+
+Explored 33081 nodes (667397 simplex iterations) in 8.94 seconds (12.96 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 190.574 191.17 192.614 ... 221.769
+
+Solve interrupted
+Best objective 1.905740000000e+02, best bound 8.387757182540e+01, gap 55.9869%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:52:09 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1486 rows, 477 columns and 5653 nonzeros
+Model fingerprint: 0x4fa0dca8
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 439 rows and 30 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+H10921  7105                     211.8300000   90.17695  57.4%  13.5    1s
+H12565  8478                     211.0600000   90.65119  57.0%  13.3    1s
+ 46368 29295  113.44496   44   19  211.06000   93.95607  55.5%  14.1    5s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 20
+  MIR: 4
+  Flow cover: 35
+  RLT: 14
+  Relax-and-lift: 2
+
+Explored 68589 nodes (1021581 simplex iterations) in 6.50 seconds (10.92 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 211.06 211.83 213.66 ... 222.659
+
+Solve interrupted
+Best objective 2.110600000000e+02, best bound 9.420506666667e+01, gap 55.3657%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 01:52:31 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1486 rows, 477 columns and 5653 nonzeros
+Model fingerprint: 0x4fa0dca8
+Variable types: 114 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 439 rows and 30 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+H10921  7105                     211.8300000   90.17695  57.4%  13.5    1s
+H12565  8478                     211.0600000   90.65119  57.0%  13.3    1s
+ 49408 30475  106.59142   42   19  211.06000   93.95607  55.5%  14.2    5s
+ 129125 67856  165.37060   59   13  211.06000   98.15300  53.5%  15.6   10s
+ 207626 120860  117.12060   45   12  211.06000  100.90732  52.2%  16.0   15s
+H248020 146861                     209.4420000  101.83781  51.4%  16.0   17s
+H248502 145570                     206.1830000  101.84838  50.6%  16.0   17s
+H258933 151814                     205.2510000  102.06723  50.3%  16.1   18s
+ 283795 167989  186.77950   50   17  205.25100  102.58996  50.0%  16.1   20s
+H354260 214799                     205.2190000  103.76418  49.4%  16.1   24s
+ 361947 220453  181.42365   69   20  205.21900  103.87162  49.4%  16.1   25s
+ 441377 271421  196.18340   78    9  205.21900  105.08854  48.8%  16.2   30s
+ 521414 323391  148.74974   69   22  205.21900  106.03277  48.3%  16.2   35s
+ 597137 372670  125.89950   51   14  205.21900  106.83571  47.9%  16.2   40s
+ 671424 419286     cutoff   86       205.21900  107.53600  47.6%  16.2   45s
+ 750802 469785  166.48360   47   25  205.21900  108.22456  47.3%  16.2   50s
+ 824514 516573  140.60152   46   15  205.21900  108.81844  47.0%  16.3   55s
+H867394 543275                     204.8620000  109.14924  46.7%  16.3   57s
+ 899856 563586  144.15470   58   27  204.86200  109.37101  46.6%  16.3   60s
+ 979754 613330  180.73176   70   12  204.86200  109.90294  46.4%  16.3   65s
+ 1057378 660913 infeasible   44       204.86200  110.40557  46.1%  16.3   70s
+ 1139275 710869  163.77596   49   17  204.86200  110.89788  45.9%  16.3   75s
+ 1216446 757600  122.65011   59   17  204.86200  111.31533  45.7%  16.3   80s
+ 1298155 808303  149.01080   60   13  204.86200  111.75491  45.4%  16.3   85s
+ 1378674 857472     cutoff   66       204.86200  112.14700  45.3%  16.2   90s
+ 1456345 904285  202.62530   92    9  204.86200  112.51631  45.1%  16.3   95s
+ 1537213 954094  186.45727   59    9  204.86200  112.89292  44.9%  16.2  100s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 20
+  MIR: 4
+  Flow cover: 35
+  RLT: 14
+  Relax-and-lift: 2
+
+Explored 1538127 nodes (24984656 simplex iterations) in 100.01 seconds (188.01 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 204.862 205.219 205.251 ... 214.113
+
+Time limit reached
+Best objective 2.048620000000e+02, best bound 1.128950000000e+02, gap 44.8922%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:01:37 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1489 rows, 480 columns and 5656 nonzeros
+Model fingerprint: 0x4ec93541
+Variable types: 117 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 442 rows and 33 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+H10921  7105                     211.8300000   90.17695  57.4%  13.5    1s
+H12565  8478                     211.0600000   90.65119  57.0%  13.3    1s
+
+Explored 14351 nodes (187703 simplex iterations) in 1.47 seconds (2.27 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 211.06 211.83 213.66 ... 222.659
+
+Solve interrupted
+Best objective 2.110600000000e+02, best bound 9.099100000000e+01, gap 56.8886%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:01:47 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1489 rows, 480 columns and 5656 nonzeros
+Model fingerprint: 0x70b90bdb
+Variable types: 117 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 442 rows and 33 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+H10921  7105                     211.8300000   90.17695  57.4%  13.5    1s
+H12565  8478                     211.0600000   90.65119  57.0%  13.3    1s
+
+Explored 27251 nodes (347315 simplex iterations) in 2.46 seconds (3.69 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 211.06 211.83 213.66 ... 222.659
+
+Solve interrupted
+Best objective 2.110600000000e+02, best bound 9.327002000000e+01, gap 55.8088%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:02:28 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1492 rows, 483 columns and 5659 nonzeros
+Model fingerprint: 0xeb24f3f5
+Variable types: 120 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 445 rows and 36 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+
+Explored 10922 nodes (148109 simplex iterations) in 1.24 seconds (1.86 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 213.66 214.106 214.113 ... 225.586
+
+Solve interrupted
+Best objective 2.136600000000e+02, best bound 9.017694666667e+01, gap 57.7942%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:02:45 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1495 rows, 486 columns and 5662 nonzeros
+Model fingerprint: 0x094883d9
+Variable types: 123 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 448 rows and 39 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+H10921  7105                     211.8300000   90.17695  57.4%  13.5    1s
+H12565  8478                     211.0600000   90.65119  57.0%  13.3    1s
+
+Explored 16232 nodes (208571 simplex iterations) in 1.61 seconds (2.47 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 211.06 211.83 213.66 ... 222.659
+
+Solve interrupted
+Best objective 2.110600000000e+02, best bound 9.148300000000e+01, gap 56.6555%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:03:08 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1591 rows, 486 columns and 5758 nonzeros
+Model fingerprint: 0x0ba33582
+Variable types: 123 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 24 rows and 6 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:03:16 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1495 rows, 486 columns and 5662 nonzeros
+Model fingerprint: 0x094883d9
+Variable types: 123 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 448 rows and 39 columns
+Presolve time: 0.01s
+Presolved: 1047 rows, 447 columns, 5344 nonzeros
+Variable types: 107 continuous, 340 integer (340 binary)
+
+Root relaxation: objective 7.622377e+01, 140 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.22377    0   21          -   76.22377      -     -    0s
+     0     0   77.46335    0   31          -   77.46335      -     -    0s
+     0     0   77.49800    0   31          -   77.49800      -     -    0s
+H    0     0                     282.2410000   77.49800  72.5%     -    0s
+     0     0   77.60939    0   30  282.24100   77.60939  72.5%     -    0s
+H    0     0                     253.8900000   77.60939  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.62300    0   28  253.89000   77.62300  69.4%     -    0s
+     0     0   77.80527    0   24  253.89000   77.80527  69.4%     -    0s
+     0     0   77.82167    0   25  253.89000   77.82167  69.3%     -    0s
+     0     0   77.82167    0   32  253.89000   77.82167  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   77.85930    0   32  253.89000   77.85930  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   32  253.89000   78.03471  69.3%     -    0s
+     0     0   78.03471    0   29  253.89000   78.03471  69.3%     -    0s
+     0     2   78.04700    0   29  253.89000   78.04700  69.3%     -    0s
+H   31    72                     245.3460000   79.64763  67.5%  29.1    0s
+H  240   249                     239.9030000   79.78701  66.7%  22.9    0s
+H  245   249                     231.2470000   79.78701  65.5%  22.7    0s
+H 1003   972                     228.1820000   80.95811  64.5%  17.1    0s
+H 1004   971                     226.9340000   80.95811  64.3%  17.1    0s
+H 1070   971                     225.5860000   80.95811  64.1%  17.0    0s
+H 1644  1562                     224.3630000   82.20981  63.4%  17.3    0s
+H 1655  1560                     222.6590000   82.20981  63.1%  17.3    0s
+* 1907  1732              61     221.1910000   82.49893  62.7%  17.5    0s
+H 1964  1729                     219.9680000   82.49893  62.5%  17.4    0s
+H 1997  1686                     218.6160000   82.49893  62.3%  17.5    0s
+H 2119  1698                     215.6000000   82.49893  61.7%  17.4    0s
+H 2184  1648                     214.1130000   82.49893  61.5%  17.4    0s
+H 2461  1722                     214.1060000   82.49893  61.5%  17.6    0s
+H 7447  4492                     213.6600000   89.16575  58.3%  14.2    0s
+H10921  7105                     211.8300000   90.17695  57.4%  13.5    1s
+H12565  8478                     211.0600000   90.65119  57.0%  13.3    1s
+ 46368 29295  113.44496   44   19  211.06000   93.95607  55.5%  14.1    5s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 20
+  MIR: 4
+  Flow cover: 35
+  RLT: 14
+  Relax-and-lift: 2
+
+Explored 62601 nodes (919859 simplex iterations) in 6.11 seconds (10.11 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 211.06 211.83 213.66 ... 222.659
+
+Solve interrupted
+Best objective 2.110600000000e+02, best bound 9.395606530612e+01, gap 55.4837%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 02:05:01 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1590 rows, 486 columns and 5757 nonzeros
+Model fingerprint: 0xd4eaf21a
+Variable types: 123 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 609 rows and 75 columns
+Presolve time: 0.01s
+Presolved: 981 rows, 411 columns, 4728 nonzeros
+Variable types: 108 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 5.947000e+01, 107 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+H    0     0                     312.6770000   59.47000  81.0%     -    0s
+H    0     0                     299.6570000   59.47000  80.2%     -    0s
+H    0     0                     258.6370000   59.47000  77.0%     -    0s
+     0     0   59.47000    0   26  258.63700   59.47000  77.0%     -    0s
+     0     0   59.64771    0   23  258.63700   59.64771  76.9%     -    0s
+     0     0   63.94585    0   17  258.63700   63.94585  75.3%     -    0s
+     0     0   64.06100    0   32  258.63700   64.06100  75.2%     -    0s
+     0     0   64.06100    0   23  258.63700   64.06100  75.2%     -    0s
+     0     0   64.09326    0   31  258.63700   64.09326  75.2%     -    0s
+H    0     0                     252.6910000   64.09652  74.6%     -    0s
+     0     0   64.09652    0   32  252.69100   64.09652  74.6%     -    0s
+     0     0   64.18217    0   33  252.69100   64.18217  74.6%     -    0s
+H    0     0                     250.2860000   64.24121  74.3%     -    0s
+     0     0   64.24121    0   34  250.28600   64.24121  74.3%     -    0s
+     0     0   64.24121    0   33  250.28600   64.24121  74.3%     -    0s
+     0     0   64.24121    0   33  250.28600   64.24121  74.3%     -    0s
+     0     0   64.24121    0   33  250.28600   64.24121  74.3%     -    0s
+     0     0   64.24121    0   33  250.28600   64.24121  74.3%     -    0s
+H    0     2                     244.9610000   64.26477  73.8%     -    0s
+     0     2   64.26477    0   24  244.96100   64.26477  73.8%     -    0s
+H   26    76                     242.7150000   65.69535  72.9%  31.9    0s
+H   31    76                     239.9480000   65.69535  72.6%  33.4    0s
+H  130   176                     232.9280000   65.69535  71.8%  22.9    0s
+H  145   176                     226.6090000   65.69535  71.0%  22.9    0s
+H  150   176                     213.4020000   65.69535  69.2%  22.8    0s
+H  250   275                     213.3590000   65.69535  69.2%  22.3    0s
+H 1309  1135                     210.8850000   68.79008  67.4%  18.1    0s
+H 1646  1375                     206.3390000   68.79008  66.7%  17.9    0s
+H 1647  1368                     202.8840000   68.79008  66.1%  17.9    0s
+H 1982  1511                     200.6380000   69.51705  65.4%  17.7    0s
+H 3008  2039                     200.5990000   70.87798  64.7%  21.1    1s
+H 4074  2341                     196.2590000   74.69519  61.9%  21.2    1s
+H 5089  2701                     195.4890000   76.07211  61.1%  20.9    1s
+ 32474 20826   90.30900   37   19  195.48900   87.20079  55.4%  20.4    5s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 2
+  Implied bound: 4
+  MIR: 35
+  Flow cover: 93
+  Zero half: 3
+  RLT: 4
+  Relax-and-lift: 1
+
+Explored 32577 nodes (667671 simplex iterations) in 8.92 seconds (13.26 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 195.489 196.259 200.599 ... 226.609
+
+Solve interrupted
+Best objective 1.954890000000e+02, best bound 8.720078729282e+01, gap 55.3935%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 09:22:57 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 1591 rows, 486 columns and 5758 nonzeros
+Model fingerprint: 0x0ba33582
+Variable types: 123 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 24 rows and 6 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 2 constraints, 0 bounds
+
+Wrote requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 09:23:23 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 993 rows, 453 columns and 4770 nonzeros
+Model fingerprint: 0x76e0f688
+Variable types: 90 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 108 rows and 6 columns
+Presolve time: 0.01s
+Presolved: 885 rows, 447 columns, 4488 nonzeros
+Variable types: 90 continuous, 357 integer (357 binary)
+
+Root relaxation: objective 5.947000e+01, 104 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+H    0     0                     432.5100000   59.47000  86.3%     -    0s
+H    0     0                     411.6460000   59.47000  85.6%     -    0s
+H    0     0                     323.7920000   59.50900  81.6%     -    0s
+     0     0   59.50900    0   30  323.79200   59.50900  81.6%     -    0s
+H    0     0                     170.9050000   59.50900  65.2%     -    0s
+H    0     0                     154.8720000   59.50900  61.6%     -    0s
+     0     0   59.64771    0   32  154.87200   59.64771  61.5%     -    0s
+     0     0   60.06900    0   17  154.87200   60.06900  61.2%     -    0s
+     0     0   60.35336    0   17  154.87200   60.35336  61.0%     -    0s
+     0     0   60.50900    0   17  154.87200   60.50900  60.9%     -    0s
+     0     0   60.72713    0   15  154.87200   60.72713  60.8%     -    0s
+H    0     0                     101.4180000   61.17073  39.7%     -    0s
+H    0     0                     100.8450000   61.17073  39.3%     -    0s
+H    0     0                      99.9740000   61.17073  38.8%     -    0s
+     0     0   61.44100    0   31   99.97400   61.44100  38.5%     -    0s
+     0     0   61.65122    0   32   99.97400   61.65122  38.3%     -    0s
+     0     0   61.88156    0   31   99.97400   61.88156  38.1%     -    0s
+     0     0   61.88156    0   30   99.97400   61.88156  38.1%     -    0s
+H    0     0                      83.9980000   61.88156  26.3%     -    0s
+     0     0   61.88156    0   17   83.99800   61.88156  26.3%     -    0s
+H    0     0                      83.1270000   61.88156  25.6%     -    0s
+     0     0   61.88156    0   16   83.12700   61.88156  25.6%     -    0s
+     0     0   61.88156    0   24   83.12700   61.88156  25.6%     -    0s
+     0     0   61.88156    0   34   83.12700   61.88156  25.6%     -    0s
+     0     0   61.88156    0   33   83.12700   61.88156  25.6%     -    0s
+     0     0   61.94908    0   31   83.12700   61.94908  25.5%     -    0s
+     0     0   61.94908    0   33   83.12700   61.94908  25.5%     -    0s
+     0     0   62.28520    0   32   83.12700   62.28520  25.1%     -    0s
+     0     0   62.36785    0   32   83.12700   62.36785  25.0%     -    0s
+     0     0   63.21169    0   32   83.12700   63.21169  24.0%     -    0s
+     0     0   63.24482    0   31   83.12700   63.24482  23.9%     -    0s
+     0     0   63.69031    0   36   83.12700   63.69031  23.4%     -    0s
+     0     0   63.69031    0   36   83.12700   63.69031  23.4%     -    0s
+     0     2   63.72500    0   31   83.12700   63.72500  23.3%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 10
+  Implied bound: 89
+  MIR: 65
+  Inf proof: 8
+  RLT: 12
+  BQP: 1
+  PSD: 1
+
+Explored 5833 nodes (91694 simplex iterations) in 0.82 seconds (0.97 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 83.127 83.998 99.974 ... 323.792
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.312700000000e+01, best bound 8.312700000000e+01, gap 0.0000%
+
+Warning: unable to write requested result file 'model.ilp'
+
+
+Gurobi 12.0.3 (mac64[arm], Matlab) logging started 五 10/ 3 09:25:09 2025
+
+Set parameter LicenseID to value 2692486
+Set parameter TimeLimit to value 100
+Set parameter NodefileDir to value ""
+Set parameter LogFile to value "gurobi.log"
+Set parameter TuneTimeLimit to value 100
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G90)
+
+CPU model: Apple M2 Pro
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  100
+LogToConsole  0
+TuneTimeLimit  100
+
+Optimize a model with 993 rows, 453 columns and 4770 nonzeros
+Model fingerprint: 0x76e0f688
+Variable types: 90 continuous, 363 integer (363 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 108 rows and 6 columns
+Presolve time: 0.01s
+Presolved: 885 rows, 447 columns, 4488 nonzeros
+Variable types: 90 continuous, 357 integer (357 binary)
+
+Root relaxation: objective 5.947000e+01, 104 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   59.47000    0   16          -   59.47000      -     -    0s
+H    0     0                     432.5100000   59.47000  86.3%     -    0s
+H    0     0                     411.6460000   59.47000  85.6%     -    0s
+H    0     0                     323.7920000   59.50900  81.6%     -    0s
+     0     0   59.50900    0   30  323.79200   59.50900  81.6%     -    0s
+H    0     0                     170.9050000   59.50900  65.2%     -    0s
+H    0     0                     154.8720000   59.50900  61.6%     -    0s
+     0     0   59.64771    0   32  154.87200   59.64771  61.5%     -    0s
+     0     0   60.06900    0   17  154.87200   60.06900  61.2%     -    0s
+     0     0   60.35336    0   17  154.87200   60.35336  61.0%     -    0s
+     0     0   60.50900    0   17  154.87200   60.50900  60.9%     -    0s
+     0     0   60.72713    0   15  154.87200   60.72713  60.8%     -    0s
+H    0     0                     101.4180000   61.17073  39.7%     -    0s
+H    0     0                     100.8450000   61.17073  39.3%     -    0s
+H    0     0                      99.9740000   61.17073  38.8%     -    0s
+     0     0   61.44100    0   31   99.97400   61.44100  38.5%     -    0s
+     0     0   61.65122    0   32   99.97400   61.65122  38.3%     -    0s
+     0     0   61.88156    0   31   99.97400   61.88156  38.1%     -    0s
+     0     0   61.88156    0   30   99.97400   61.88156  38.1%     -    0s
+H    0     0                      83.9980000   61.88156  26.3%     -    0s
+     0     0   61.88156    0   17   83.99800   61.88156  26.3%     -    0s
+H    0     0                      83.1270000   61.88156  25.6%     -    0s
+     0     0   61.88156    0   16   83.12700   61.88156  25.6%     -    0s
+     0     0   61.88156    0   24   83.12700   61.88156  25.6%     -    0s
+     0     0   61.88156    0   34   83.12700   61.88156  25.6%     -    0s
+     0     0   61.88156    0   33   83.12700   61.88156  25.6%     -    0s
+     0     0   61.94908    0   31   83.12700   61.94908  25.5%     -    0s
+     0     0   61.94908    0   33   83.12700   61.94908  25.5%     -    0s
+     0     0   62.28520    0   32   83.12700   62.28520  25.1%     -    0s
+     0     0   62.36785    0   32   83.12700   62.36785  25.0%     -    0s
+     0     0   63.21169    0   32   83.12700   63.21169  24.0%     -    0s
+     0     0   63.24482    0   31   83.12700   63.24482  23.9%     -    0s
+     0     0   63.69031    0   36   83.12700   63.69031  23.4%     -    0s
+     0     0   63.69031    0   36   83.12700   63.69031  23.4%     -    0s
+     0     2   63.72500    0   31   83.12700   63.72500  23.3%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 10
+  Implied bound: 89
+  MIR: 65
+  Inf proof: 8
+  RLT: 12
+  BQP: 1
+  PSD: 1
+
+Explored 5833 nodes (91694 simplex iterations) in 0.79 seconds (0.97 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 10: 83.127 83.998 99.974 ... 323.792
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.312700000000e+01, best bound 8.312700000000e+01, gap 0.0000%
+
+Warning: unable to write requested result file 'model.ilp'
+

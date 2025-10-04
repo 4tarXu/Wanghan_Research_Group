@@ -69,9 +69,9 @@ for k = 1:Instance_Layer
     % 数据合并并存储到结构体数组
     Sturct_instances(k).City = City; % 城市数据
     Sturct_instances(k).Demand = Demand; % 需求数据
-    Sturct_instances(k).ChargeStations_index = ChargeStations_index; % 换电站坐标
-    Sturct_instances(k).CityNum = CityNum; % 客户点+换电站x`总数量
-    Sturct_instances(k).Distance = Distance; % 距离矩阵
+    Sturct_instances(k).ChargeStations_index = ChargeStations_index; % 换电站
+    Sturct_instances(k).CityNum = CityNum;
+    Sturct_instances(k).Distance = Distance;
    
 end
 
