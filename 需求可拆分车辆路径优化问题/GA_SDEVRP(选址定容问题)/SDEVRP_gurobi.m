@@ -9,14 +9,12 @@ close all
     load('../test_data/Demand.mat')       %需求量
     load('../test_data/Capacity.mat')     %车容量约束
      % load('../test_data/Travelcon.mat')    %车辆行驶约束(电量)
-
-    
      Travelcon = 60;
 
 
     % 把测试算例中的后两个节点变成换电站
-    ChargeStationNum = 6; % 换电站数量
-    ChargeStations_index = [6:11]; % 换电站编号
+    ChargeStationNum = 2; % 换电站数量
+    ChargeStations_index = [10:11]; % 换电站编号
     ChargeStations_index_Depot = [1 ChargeStations_index];
     Demand(ChargeStations_index) = 0; % 换电站的需求量设置为0
     CityNum = 10;% 总节点数量：配送中心(车场)数量 + 客户点数量 + 换电站数量
@@ -25,7 +23,7 @@ close all
     % ----------------- 参数设置 ----------------- 
     CityNum = size(City,1); % 总节点数（节点1为仓库）
     CustomerNum = CityNum-ChargeStationNum; % 客户数
-    VehicleNum = 2; % 车辆数
+    VehicleNum = 3; % 车辆数
     Q = Capacity; % 车辆容量
     B = Travelcon; % 车辆最大行驶距离(电池容量)
 %% 决策变量        
@@ -171,7 +169,7 @@ close all
  %% 求解器参数   
     % 求解设置
     ops = sdpsettings('verbose', 1, 'solver', 'gurobi','debug',1,'savesolveroutput',1);
-    ops.gurobi.TuneTimeLimit = 300;    % 设置5分钟调参时间
+     ops.gurobi.TuneTimeLimit = 600;    % 设置5分钟调参时间
     % ops.gurobi.WriteToFile = 'model_1.lp';
     % 其他必要设置
      ops.gurobi.TimeLimit = 600;       % 求解时间限制

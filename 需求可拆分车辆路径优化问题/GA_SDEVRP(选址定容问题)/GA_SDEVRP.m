@@ -17,18 +17,15 @@ function [mindis,bestind,Chrom,VehicleNum,TSPRoute,mindisbygen] = GA_SDVRP(Dista
      % fprintf('变异操作后')
      SelCh=Mutate(SelCh,Pm,CityNum);
     %% 逆转操作(注意，本算法框架的遗传操作都是基于TSP架构进行)
-
     TSPRoute_sel = SelCh;   % 保存经过遗传操作的TSP路径，与Chrom对应
 
     %% (注意，本算法框架的遗传操作都是基于TSP架构进行)TSP路径转SDVRP路径,即把TSPRoute转化为符合要求的Chrom数组  
-
     [Chrom_sel,VehicleNum_sel] = TSPtoChrom(TSPRoute_sel,CityNum,Distance,Travelcon,Demand,Capacity);
 
     %% 亲代重插入子代
     [TSPRoute,Chrom,VehicleNum]=Reins(Chrom,Chrom_sel,TSPRoute,TSPRoute_sel,FitnV,VehicleNum_sel,VehicleNum);
 
     %% 邻域搜索操作（注意：邻域搜索操作和剔除冗余充电站操作顺序可以互换，实验阶段检测一下先后顺序对时间的影响）
-    
     Chrom = localsearch(Chrom,Distance,Demand,Capacity,Travelcon,VehicleNum,VehicleCost,BatteryCap,ChargeStations_index);
 
     %% 剔除冗余充电站（注意：邻域搜索操作和剔除冗余充电站操作顺序可以互换，实验阶段检测一下先后顺序对时间的影响）

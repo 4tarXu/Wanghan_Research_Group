@@ -16,45 +16,45 @@ tic % 保存当前时间(算法执行时间开始时刻标记)
 %% 算例设置区域
 
 % --------基于Solomon benchmark生成测试算例
-% % 导入测试算例：solomon标准测试算例(详见课题组门户网站关于Solomon算例的讲解，终点关注 C、R、RC的区别)
-%       instance=importdata('./instance/C/C101.txt');
-% % 
-% % % 设置算例规模(客户点数量)
-%       Instance_Layer = 1; % 设置算例层数为3，即生成3次算例，但要求充电站位置相同
-%       CustomerNum = 30; % 设置客户点数量为
-%       ChargeStationNum = 10; % 设置充电站位置数量，每个位置设置多个"重合"充电站，用于表示需要电池数量。最后根据选择情况定容。   
-%       ChargeStationBatteryNum = 1;% 设置电池数量：
-%       [Sturct_instances,City,Demand,Distance,ChargeStations_index,CityNum]=sdvrp_instance(instance,CustomerNum,ChargeStationNum,ChargeStationBatteryNum,Instance_Layer);
+ % 导入测试算例：solomon标准测试算例(详见课题组门户网站关于Solomon算例的讲解，终点关注 C、R、RC的区别)
+       instance=importdata('./instance/C/C101.txt');
+ % 
+ % % 设置算例规模(客户点数量)
+       Instance_Layer = 3; % 设置算例层数为3，即生成3次算例，但要求充电站位置相同
+       CustomerNum = 100; % 设置客户点数量为
+       ChargeStationNum = 10; % 设置充电站位置数量，每个位置设置多个"重合"充电站，用于表示需要电池数量。最后根据选择情况定容。   
+       ChargeStationBatteryNum = 10;% 设置电池数量：
+       [Sturct_instances,City,Demand,Distance,ChargeStations_index,CityNum]=sdvrp_instance(instance,CustomerNum,ChargeStationNum,ChargeStationBatteryNum,Instance_Layer);
 
 % --------代码自带测试算例
 % 以下是问题规模为10(10个客户点)的测试算例、同时包含3个充电站
-    load('../test_data/City.mat')	      %需求点经纬度，用于画实际路径的XY坐标
-    load('../test_data/Distance.mat')	  %距离矩阵
-    load('../test_data/Demand.mat')       %需求量
-    load('../test_data/Capacity.mat')     %车容量约束
-    % load('../test_data/Travelcon.mat')    %车辆行驶约束(电量)
-    Travelcon = 50;
-    Instance_Layer = 1;% 设置算例层数
-    Sturct_instances(Instance_Layer) = struct('City', [], 'Demand', [],'Distance',[],'ChargeStations_index',[],'CityNum',[]);% 预分配结构体数组
-    % 把测试算例中的后两个节点变成换电站
-    ChargeStationNum = 7; % 换电站数量为3
-    ChargeStationBatteryNum = 1; % 每个换电站的电池数量
-    ChargeStations_index = [5:11]; % 换电站编号
-    Demand(ChargeStations_index) = 0; % 换电站的需求量设置为0
-    CityNum = 10;% 总节点数量：配送中心(车场)数量 + 客户点数量 + 换电站数量
-    % 数据存入结构体
-    Sturct_instances.City = City; % 城市数据
-    Sturct_instances.Demand = Demand; % 需求数据
-    Sturct_instances.ChargeStations_index = ChargeStations_index; % 换电站坐标
-    Sturct_instances.CityNum = CityNum; % 节点总数量
-    Sturct_instances.Distance = Distance; % 距离矩阵
+    % load('../test_data/City.mat')	      %需求点经纬度，用于画实际路径的XY坐标
+    % load('../test_data/Distance.mat')	  %距离矩阵
+    % load('../test_data/Demand.mat')       %需求量
+    % load('../test_data/Capacity.mat')     %车容量约束
+    % % load('../test_data/Travelcon.mat')    %车辆行驶约束(电量)
+    % Travelcon = 60;
+    % Instance_Layer = 1;% 设置算例层数
+    % Sturct_instances(Instance_Layer) = struct('City', [], 'Demand', [],'Distance',[],'ChargeStations_index',[],'CityNum',[]);% 预分配结构体数组
+    % % 把测试算例中的后两个节点变成换电站
+    % ChargeStationNum = 6; % 换电站数量为3
+    % ChargeStationBatteryNum = 1; % 每个换电站的电池数量
+    % ChargeStations_index = [6:11]; % 换电站编号
+    % Demand(ChargeStations_index) = 0; % 换电站的需求量设置为0
+    % CityNum = 10;% 总节点数量：配送中心(车场)数量 + 客户点数量 + 换电站数量
+    % % 数据存入结构体
+    % Sturct_instances.City = City; % 城市数据
+    % Sturct_instances.Demand = Demand; % 需求数据
+    % Sturct_instances.ChargeStations_index = ChargeStations_index; % 换电站坐标
+    % Sturct_instances.CityNum = CityNum; % 节点总数量
+    % Sturct_instances.Distance = Distance; % 距离矩阵
 
 %% 算例相关参数设置
 
 % % 车辆相关参数设置：
-% Capacity = 200; % 设置车容量 原参数：12
+ Capacity = 200; % 设置车容量 原参数：12
  VehicleCost = 0;% 设置车辆成本参数，用于控制与平衡车辆使用的数量与车辆行驶距离的关系
-% Travelcon = 150;  % 车辆最大行驶里程
+ Travelcon = 150;  % 车辆最大行驶里程
 
 % 车辆电力相关参数(目前均没有使用，因为算法逻辑是如何客户访问充电站，则行驶距离清零，只要满足里程约束即可)
 %   - 未使用的主要原因：目前算法没有考虑时间相关约束，即不考虑充电时间和访问时间
@@ -62,7 +62,6 @@ BatteryCap = 50;       % 电池最大容量（kWh）
 EnergyConsump = 0.2;    % 单位距离能耗（kWh/km）
 ChargeRate = 10;        % 充电速率（kWh/h）
 MaxRange = BatteryCap / EnergyConsump; % 最大续航里程（km）= 电池容量/单位能耗
-
 
 %% 遗传算法相关参数设置
 NIND=30;      %种群大小
@@ -74,7 +73,7 @@ Pm=0.05;        %变异概率
 % 创建绘图
 % figure;
 
-for k = 1:Instance_Layer
+parfor k = 1:Instance_Layer
 
 
 %% 为预分配内存而初始化的0矩阵
